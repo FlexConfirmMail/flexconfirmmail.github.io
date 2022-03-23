@@ -53,6 +53,14 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'press'
+html_title = 'FlexConfirmMail'
+html_sidebars = {'**': ['util/sidetoc.html', 'util/searchbox.html']}
+
+html_theme_options = {
+  "external_links": [
+      ("Github", "https://github.com/FlexConfirmMail"),
+  ]
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
