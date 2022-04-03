@@ -10,7 +10,7 @@ jobs:
       - name: Build
         run: |
           sudo apt install python3-pip
-          python3 -m pip install -U --user Sphinx sphinx-press-theme
+          python3 -m pip install -U --user Sphinx pydata-sphinx-theme
           make docs
       - name: Git Push
         run: |

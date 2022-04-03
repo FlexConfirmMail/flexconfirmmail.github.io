@@ -21,7 +21,6 @@ project = 'FlexConfirmMail'
 copyright = '2022, ClearCode Inc.'
 author = 'ClearCode Inc.'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -52,14 +51,33 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'press'
+html_theme = 'pydata_sphinx_theme'
 html_title = 'FlexConfirmMail'
-html_sidebars = {'**': ['util/sidetoc.html', 'util/searchbox.html']}
+html_logo = '_static/logo.svg'
+html_css_files = ['custom.css']
+html_show_copyright = False
+html_show_sphinx = False
+html_copy_source = False
 
 html_theme_options = {
-  "external_links": [
-      ("Github", "https://github.com/FlexConfirmMail"),
-  ]
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/FlexConfirmMail",
+            "icon": "fab fa-github-square",
+            "type": "fontawesome",
+        },
+        {
+            "name": "ClearCode",
+            "url": "https://www.clear-code.com",
+            "icon": "_static/clearcode.png",
+            "type": "local",
+        }
+   ],
+   "search_bar_text": "サイト内検索",
+   "left_sidebar_end": ["clearcode.html"],
+   "navigation_with_keys": False,
+   "show_prev_next": False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
