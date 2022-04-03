@@ -1,245 +1,251 @@
+
 <!DOCTYPE html>
-<html  lang="ja">
+
+<html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-      <title>FlexConfirmMail</title>
+    <title>FlexConfirmMailプロジェクト &#8212; FlexConfirmMail</title>
     
-          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
-      
-      <!-- sphinx script_files -->
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/translations.js"></script>
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
-      
-      <!-- bundled in js (rollup iife) -->
-      <!-- <script src="_static/theme-vendors.js"></script> -->
-      <script src="_static/theme.js" defer></script>
     
-  <link rel="index" title="索引" href="genindex.html" />
-  <link rel="search" title="検索" href="search.html" />
-  <link rel="next" title="クイックスタート" href="outlook/quickstart.html" /> 
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="クイックスタート" href="quickstart.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ja">
+    
+
+    <!-- Google Analytics -->
+    
   </head>
-
-  <body>
-    <div id="app">
-    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="#" class="home-link">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
-      <span class="site-name">FlexConfirmMail</span>
+    <div class="container-fluid" id="banner"></div>
+
     
-  </router-link>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
-  <div class="links">
-    <navlinks class="can-hide">
+  <div id="navbar-start">
+    
+    
 
-  
-    <div class="nav-item">
-      <a href="#id1"
-         class="nav-link ">
-         Outlook
-      </a>
-    </div>
-  
-    <div class="nav-item">
-      <a href="#id1"
-         class="nav-link ">
-         Enterprise
-      </a>
-    </div>
-  
+<a class="navbar-brand" href="#">
+  <img src="_static/logo.svg" class="logo" alt="logo">
+</a>
 
 
-
-  
-    <div class="nav-item">
-      <a href="https://github.com/FlexConfirmMail"
-        class="nav-link external">
-          Github <outboundlink></outboundlink>
-      </a>
-    </div>
-  
-
-    </navlinks>
+    
   </div>
-</navbar>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
-      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="quickstart.html">
+  クイックスタート
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="download.html">
+  ダウンロード
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="faq.html">
+  よくある質問
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="enterprise.html">
+  法人のお客様へ
+ </a>
+</li>
+
+    
+</ul>
       </div>
-        <sidebar @toggle-sidebar="toggleSidebar">
-          
-          <navlinks>
-            
-
-  
-    <div class="nav-item">
-      <a href="#id1"
-         class="nav-link ">
-         Outlook
-      </a>
+      
     </div>
-  
-    <div class="nav-item">
-      <a href="#id1"
-         class="nav-link ">
-         Enterprise
-      </a>
-    </div>
-  
 
-
-
-  
-    <div class="nav-item">
-      <a href="https://github.com/FlexConfirmMail"
-        class="nav-link external">
-          Github <outboundlink></outboundlink>
-      </a>
-    </div>
-  
-
-            
-          </navlinks><div class="sidebar-links" role="navigation" aria-label="main navigation">
-  
-    <div class="sidebar-group">
-      <p class="caption">
-        <span class="caption-text"><a href="#id1">Outlook</a></span>
-      </p>
-      <ul class="">
-        
-          <li class="toctree-l1 ">
-            
-              <a href="outlook/quickstart.html" class="reference internal ">クイックスタート</a>
-            
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 ">
-            
-              <a href="outlook/config.html" class="reference internal ">カスタマイズ</a>
-            
-
-            
-          </li>
-
-        
-          <li class="toctree-l1 ">
-            
-              <a href="outlook/faq.html" class="reference internal ">よくある質問</a>
-            
-
-            
-          </li>
-
-        
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/FlexConfirmMail" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.clear-code.com" rel="noopener" target="_blank" title="ClearCode"><img src="_static/clearcode.png" class="icon-link-image" alt="ClearCode"/></a>
+        </li>
       </ul>
-    </div>
-  
-    <div class="sidebar-group">
-      <p class="caption">
-        <span class="caption-text"><a href="#id1">Enterprise</a></span>
-      </p>
-      <ul class="">
-        
-          <li class="toctree-l1 ">
-            
-              <a href="enterprise.html" class="reference internal ">商用サポート</a>
-            
-
-            
-          </li>
-
-        
-      </ul>
-    </div>
-  
-</div><div id="searchbox" class="searchbox" role="search">
-  <div class="caption"><span class="caption-text">クイック検索</span>
-    <div class="searchformwrapper">
-      <form class="search" action="search.html" method="get">
-        <input type="text" name="q" />
-        <input type="submit" value="検索" />
-        <input type="hidden" name="check_keywords" value="yes" />
-        <input type="hidden" name="area" value="default" />
-      </form>
+      </div>
+      
     </div>
   </div>
 </div>
-        </sidebar>
-
-      <page>
-          <div class="body-header" role="navigation" aria-label="navigation">
-  
-  <ul class="breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    </nav>
     
-    <li>FlexConfirmMail</li>
-  </ul>
-  
 
-  <ul class="page-nav">
-  <li class="next">
-    <a href="outlook/quickstart.html"
-       title="次の章へ">クイックスタート →</a>
-  </li>
-</ul>
-  
-</div>
-<hr>
-          <div class="content" role="main" v-pre>
+    <div class="container-xl">
+      <div class="row">
+          
             
-  <section id="flexconfirmmail">
-<h1>FlexConfirmMail<a class="headerlink" href="#flexconfirmmail" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>FlexConfirmMailは、メール送信時に宛先を確認できるようにすることで、
-誤送信を防ぐためのメールソフト用のアドオンです。</p>
-<p><a class="reference internal" href="outlook/quickstart.html"><span class="doc">Microsoft Outlook</span></a> と <cite>Thunderbird</cite> をサポートしており、
-簡単な導入手順で、今日から誤送信対策を始めることができます。</p>
-<section id="id1">
-<h2>開発元<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>FlexConfirmMailは <a class="reference external" href="https://www.clear-code.com">株式会社クリアコード</a> が開発する自由なソフトウェアです。</p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Outlook</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="outlook/quickstart.html">クイックスタート</a></li>
-<li class="toctree-l1"><a class="reference internal" href="outlook/config.html">カスタマイズ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="outlook/faq.html">よくある質問</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Enterprise</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="enterprise.html">商用サポート</a></li>
-</ul>
-</div>
-</section>
-</section>
-
-
-          </div>
-          <div class="page-nav">
-            <div class="inner"><ul class="page-nav">
-  <li class="next">
-    <a href="outlook/quickstart.html"
-       title="次の章へ">クイックスタート →</a>
-  </li>
-</ul><div class="footer" role="contentinfo">
-      &#169; Copyright 2022, ClearCode Inc..
-    <br>
-    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
-</div>
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="サイト内検索" aria-label="サイト内検索" autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items"><center>
+<p style='color:#666;font-size:small'>
+Developed by <a href='https://www.clear-code.com/'>ClearCode Inc.</a>
+</center>
+              </div>
             </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   コンテンツリンク
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
           </div>
-      </page>
-    </div></div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="flexconfirmmail">
+<h1>FlexConfirmMailプロジェクト<a class="headerlink" href="#flexconfirmmail" title="このヘッドラインへのパーマリンク">#</a></h1>
+<p><strong>FlexConfirmMailは、フリーソフトウェアの誤送信対策ソリューションです。</strong>
+企業のメール運用を主なターゲットとして、
+宛先を分かりやすくチェックする仕組みを提供することで、
+送信ミスを防止することを目指しています。</p>
+<img alt="_images/top.png" src="_images/top.png" />
+<section id="id1">
+<h2>コンテンツリンク<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">#</a></h2>
+<table class="table-of-contents table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="quickstart.html"><span class="doc">クイックスタート</span></a></p>
+<p>FlexConfirmMailの導入方法と基本的な使い方を説明します</p>
+</td>
+<td><p><a class="reference internal" href="download.html"><span class="doc">ダウンロード</span></a></p>
+<p>最新版のインストーラはこちらからダウンロードできます</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="faq.html"><span class="doc">よくある質問</span></a></p>
+<p>導入などに関するFAQをまとめています</p>
+</td>
+<td><p><a class="reference internal" href="enterprise.html"><span class="doc">法人のお客様へ</span></a></p>
+<p>組織導入に最適化されたエンタープライズ版のご案内です。</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
     
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, ClearCode Inc..<br>
+</p>
+    </div>
     
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
   </body>
 </html>

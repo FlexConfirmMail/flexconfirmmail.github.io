@@ -1,0 +1,23 @@
+a {
+    color: #cd853f !important;
+}
+
+h1,h2,h3,h4,h5 {
+    color: #555;
+}
+
+table.table-of-contents a {
+    font-size: 1.3em;
+}
+
+table.table-of-contents th,
+table.table-of-contents td {
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+table.table-of-contents td  p {
+    color: #343434;
+    margin-bottom: 0.3em;
+}
