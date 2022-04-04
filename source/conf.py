@@ -79,6 +79,7 @@ html_theme_options = {
    "use_edit_page_button": True,
    "navigation_with_keys": False,
    "show_prev_next": False,
+   "google_analytics_id": "UA-224748541",
 }
 
 
