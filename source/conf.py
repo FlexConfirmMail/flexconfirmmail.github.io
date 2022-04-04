@@ -76,8 +76,17 @@ html_theme_options = {
    ],
    "search_bar_text": "サイト内検索",
    "left_sidebar_end": ["clearcode.html"],
+   "use_edit_page_button": True,
    "navigation_with_keys": False,
    "show_prev_next": False,
+}
+
+
+html_context = {
+    "github_user": "FlexConfirmMail",
+    "github_repo": "flexconfirmmail.github.io",
+    "github_version": "main",
+    "doc_path": "source"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
