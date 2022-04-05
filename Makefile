@@ -15,6 +15,7 @@ help:
 docs: html
 	rm -rf docs
 	mv build/html docs
+	cp googlecd24172c95f0d5b3.html docs
 
 .PHONY: help Makefile docs
 
