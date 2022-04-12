@@ -5,7 +5,7 @@ FlexConfirmMailプロジェクト
 **FlexConfirmMailは、フリーソフトウェアの誤送信対策ソリューションです。**
 企業のメール運用において大きな課題となる送信ミスの問題を解決します。
 
-Microsoft Outlookにアドインとして導入することで、
+Microsoft Outlookにアドオンとして導入することで、
 今日から誤送信対策を始めることができます。
 
 .. image:: _static/top.png
