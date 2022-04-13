@@ -94,3 +94,13 @@ html_context = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+download_url = "https://github.com/FlexConfirmMail/Outlook/releases/download/v22.0/FlexConfirmMailSetup-22.0.exe"
+rst_prolog = """
+.. role:: raw-html(raw)
+   :format: html
+.. |latest| replace:: v22.0
+.. |stable| replace:: v22
+.. |download| replace:: :raw-html:`<a href="{0}">ダウンロード</a>`
+.. |auto-download| replace:: :raw-html:`<meta http-equiv="refresh" content="1;url={0}">`
+""".format(download_url)
