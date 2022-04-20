@@ -76,7 +76,6 @@ html_theme_options = {
         }
    ],
    "search_bar_text": "サイト内検索",
-   "left_sidebar_end": ["clearcode.html"],
    "use_edit_page_button": True,
    "navigation_with_keys": False,
    "show_prev_next": False,
