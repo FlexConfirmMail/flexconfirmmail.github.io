@@ -23,6 +23,21 @@ FlexConfirmMailは誤送信を防止するためのメールクライアント�
    FlexConfirmMailはこれらの問題を「仕組みによって解決する」という
    コンセプトのもとで開発されたものです。
 
+スクリーンショット
+==================
+
+.. list-table::
+
+   * - .. figure:: _static/screenshot-confirm.png
+          :width: 90%
+
+          FlexConfirmMailの送信確認画面
+
+     - .. figure:: _static/screenshot-config.png
+          :width: 90%
+
+          FlexConfirmMailの設定画面
+
 製品ハイライト
 ==============
 
