@@ -2,11 +2,15 @@
 ダウンロード
 ============
 
-FlexConfirmMail for Outlook |latest|
-====================================
+FlexConfirmMail |latest|
+========================
 
-以下のリンクから、FlexConfirmMailの最新版をダウンロードできます。
-|stable| は現在の安定版となり、2022年12月までサポートされます。
+* 以下のリンクから、FlexConfirmMailの最新版をダウンロードできます。
+* 現在の安定版の |stable| は |eol| までサポートされます。
+
+**インストーラ**
+
+* :doc:`FlexConfirmMailSetup.exe ダウンロード <thankyou>` (2MB)
 
 **システム要件**
 
@@ -16,10 +20,6 @@ FlexConfirmMail for Outlook |latest|
 システム       Microsoft Windows 7・8/8.1・10・11
 クライアント   Office 2013/2016/2019・Microsoft365デスクトップアプリ
 ============== =====================================================
-
-**ダウンロード**
-
-* :doc:`FlexConfirmMailSetup.exe <thankyou>` (2MB)
 
 .. topic:: エンタープライズ版をご契約のお客様へ
 
