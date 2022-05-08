@@ -8,93 +8,107 @@
    :local:
    :backlinks: none
 
-必須要件
-========
-
-FlexConfirmMailはMicrosoft Office 2013以降をサポートしています。
-また、Microsoft365をご利用の場合も、デスクトップクライアントに導入することが可能です。
-
-詳しいシステム要件は :any:`download` を参照ください。
-
 インストール
 ============
 
-FlexConfirmMailはEXE形式のインストーラを公開しています。
-インストーラは :any:`こちらから <download>` 入手できます。
+FlexConfirmMailをインストールする
+---------------------------------
 
-1. FlexConfirmMailSetup.exe を端末に配置します。
+.. list-table::
+   :widths: 10 10
 
-2. インストーラを実行し、ウィザードを完遂させます。
+   * - 1. FlexConfirmMailSetup.exe を実行します。
 
-   .. image:: _static/installer.png
+          なお、FlexConfirmMailの最新版インストーラは  :any:`download` で配布しています。
 
-3. Outlookを起動します。
+     - .. figure:: _static/installer.png
+          :width: 95%
 
-4. リボンの『ホーム』にFlexConfirmMailが追加されていれば成功です。
+   * - 2. ウィザード完了後、Outlookの「ホーム」にFlexConfirmMailが追加されていれば成功です。
+
+     - .. figure:: _static/Ribbon.png
+          :width: 95%
+
+   * - 3. これでインストール手順は完了です！
+
+     -
 
 .. hint::
 
     FlexConfirmMailのアドオンが読み込まれなかった場合は、
     Outlookの「ファイル > オプション」から、有効なアドオンの一覧に
-    FlexConfirmMailが登録されていることを確認します。
+    FlexConfirmMailが登録されていることを確認してください。
 
 設定とカスタマイズ
 ==================
 
-FlexConfirmMailの設定はOutlookのリボンのアイコンから変更できます。
-
 社内ドメインを設定する
 ----------------------
 
-1. Outlookのホームタブから「FlexConfirmMail設定」をクリックします。
+送信チェック時に社内の宛先として扱うドメインの一覧を設定します。
 
-2. 「社内ドメイン」タブをクリックし、ドメインを追記します。
+.. list-table::
+   :widths: 10 10
 
-   .. image:: _static/TrustedDomains.png
-      :width: 70%
+   * - 1. 「FlexConfirmMail設定 > 社内ドメイン」を選択します。
 
-3. 「設定を保存して終了」を押下すれば完了です。
+          設定画面の例に従って、社内のドメイン（例えば「clear-code.com」など）を追記します。
+
+     - .. figure:: _static/TrustedDomains.png
+          :width: 95%
+
+   * - 2. 「設定を保存して終了」を押下すれば完了です。
+
+     -
 
 注意が必要なドメインを設定する
 ------------------------------
 
 宛先に含まれる場合に、特に注意が必要なドメインの一覧を設定します。
 
-1. Outlookのホームタブから「FlexConfirmMail設定」をクリックします。
+.. list-table::
+   :widths: 10 10
 
-2. 「注意が必要なドメイン」タブをクリックし、ドメインを追記します。
+   * - 1. 「FlexConfirmMail設定 > 注意が必要なドメイン」を選択します。
 
-   .. image:: _static/UnsafeDomains.png
-      :width: 70%
+          設定画面の例に従って、ドメインを追記します。
 
-3. 「設定を保存して終了」を押下すれば完了です。
+     - .. figure:: _static/UnsafeDomains.png
+          :width: 95%
 
-4. この設定により、送信時に次のような警告が表示されるようになります。
+   * - 2. 「設定を保存して終了」を押下すれば完了です。
+     -
 
-   .. image:: _static/UnsafeDomainsExample.png
-      :width: 70%
+**注意が必要なドメインの警告例**
+
+.. image:: _static/UnsafeDomainsExample.png
+   :width: 70%
 
 注意が必要なファイル名を設定する
 --------------------------------
 
 注意が必要な添付ファイルのキーワードを設定します。
 
-1. Outlookのホームタブから「FlexConfirmMail設定」をクリックします。
+.. list-table::
+   :widths: 10 10
 
-2. 「注意が必要なファイル名」タブをクリックし、キーワードを追記します。
+   * - 1. 「FlexConfirmMail設定 > 注意が必要なファイル名」を選択します。
 
-   .. image:: _static/UnsafeFiles.png
-      :width: 70%
+          設定画面の例に従って、キーワードを追記します。
 
-3. 「設定を保存して終了」を押下すれば完了です。
+     - .. figure:: _static/UnsafeFiles.png
+          :width: 95%
 
-4. この設定により、送信時に次のような警告が表示されるようになります。
+   * - 2. 「設定を保存して終了」を押下すれば完了です。
+     -
 
-   .. image:: _static/UnsafeFilesExample.png
-      :width: 70%
+**注意が必要なファイル名の警告例**
 
-運用ヒント
-==========
+.. image:: _static/UnsafeFilesExample.png
+   :width: 70%
+
+運用に関するヒント
+==================
 
 インストーラをサイレント実行する
 --------------------------------
@@ -123,7 +137,7 @@ FlexConfirmMailが自動的に無効化されるのを防止するには、
 
 5. 値の名前に FlexConfirmMail と入力し、値を 1 に設定する。
 
-   .. image:: _static/resiliency.png
-      :width: 70%
+   .. figure:: _static/resiliency.png
+      :width: 60%
 
 6. 「OK」ボタンを押下して確定する。
