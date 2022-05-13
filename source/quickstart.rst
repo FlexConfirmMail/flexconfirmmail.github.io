@@ -8,6 +8,22 @@
    :local:
    :backlinks: none
 
+動画で学ぶFlexConfirmMail
+=========================
+
+これからFlexConfirmMailを使い始める方向けに、
+インストーラの入手からの一連のセットアップの流れを解説した動画
+（音声有り・字幕対応）を用意しています。
+
+* FlexConfirmMailのインストーラを既に取得されている場合は、
+  動画の40秒からインストールと初期設定の解説が始まります。
+
+**動画「2分で始めるFlexConfirmMail」**
+
+.. raw:: html
+
+   <iframe width="480" height="270" src="https://www.youtube.com/embed/cBfAGb6Ub20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 インストール
 ============
 
