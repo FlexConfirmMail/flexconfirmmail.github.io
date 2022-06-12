@@ -2,30 +2,17 @@
 クイックスタート
 ================
 
-本記事では、FlexConfirmMailをOutlookに導入する方法について解説します。
+このページでは、FlexConfirmMailをOutlookに導入する方法について解説します。
 
 .. contents:: 目次
    :local:
    :backlinks: none
 
-動画で学ぶFlexConfirmMail
-=========================
-
-これからFlexConfirmMailを使い始める方向けに、
-インストーラの入手からの一連のセットアップの流れを解説した動画
-（音声有り・字幕対応）を用意しています。
-
-* FlexConfirmMailのインストーラを既に取得されている場合は、
-  動画の40秒からインストールと初期設定の解説が始まります。
-
-**動画「2分で始めるFlexConfirmMail」**
-
-.. raw:: html
-
-   <iframe width="480" height="270" src="https://www.youtube.com/embed/cBfAGb6Ub20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 インストール
 ============
+
+* 初期セットアップの流れを解説した動画 「`2分で始める誤送信対策 <https://www.youtube.com/watch?v=cBfAGb6Ub20>`_」も用意しています。
+* 動画の方が分かりやすいという方は上のリンクからご覧ください。
 
 FlexConfirmMailをインストールする
 ---------------------------------
@@ -33,95 +20,130 @@ FlexConfirmMailをインストールする
 .. list-table::
    :widths: 10 10
 
-   * - 1. FlexConfirmMailSetup.exe を実行します。
+   * - 1. FlexConfirmMailの最新のEXEインストーラを :any:`download` から取得します。
 
-          なお、FlexConfirmMailの最新版インストーラは  :any:`download` で配布しています。
+     - .. figure:: _static/download.png
+          :width: 95%
+
+   * - 2. FlexConfirmMailSetup.exe を実行します。
 
      - .. figure:: _static/installer.png
           :width: 95%
-
-   * - 2. ウィザード完了後、Outlookの「ホーム」にFlexConfirmMailが追加されていれば成功です。
+ 
+   * - 3. ウィザード完了後、Outlookの「ホーム」にFlexConfirmMailが追加されていれば成功です。
 
      - .. figure:: _static/Ribbon.png
           :width: 95%
 
-   * - 3. これでインストール手順は完了です！
-
-     -
-
 .. hint::
 
-    FlexConfirmMailのアドオンが読み込まれなかった場合は、
-    Outlookの「ファイル > オプション」から、有効なアドオンの一覧に
-    FlexConfirmMailが登録されていることを確認してください。
+   * FlexConfirmMailを構成するファイルは :file:`C:\\Program Files\\FlexConfirmMail` に格納されます。
+   * 詳しいファイルの一覧とそれぞれの説明は脚注 [#f1]_ に掲載しています。
+   * 単一のインストールで32ビット・64ビットの両方のOutlookに対応しています。
 
+インストール後の流れ
+--------------------
+
+.. list-table::
+   :widths: 10 10
+
+   * - 1. FlexConfirmMailは「送信」ボタンをクリックした際に有効になるアドオンです。
+
+     - .. figure:: _static/SendButton.png
+          :width: 95%
+
+   * - 2. メールの送信時に右図（クリックで拡大）のような確認ダイアログが表示されるようになります。
+
+     - .. figure:: _static/MainDialog.png
+          :width: 95%
+
+   * - 3. 宛先と添付ファイルにすべてチェックを入れると、カウントダウン後に実際に送信されます。
+
+     - .. figure:: _static/CountDialog.png
+          :width: 95%
+
+   * - 4. この一連の挙動はカスタマイズ可能です。詳しくは次章の「設定とカスタマイズ」を参照ください。
+
+     - 
+ 
 設定とカスタマイズ
 ==================
 
 社内ドメインを設定する
 ----------------------
 
-送信チェック時に社内の宛先として扱うドメインの一覧を設定します。
-
 .. list-table::
    :widths: 10 10
 
-   * - 1. 「FlexConfirmMail設定 > 社内ドメイン」を選択します。
+   * - 1. FlexConfirmMailは宛先を社内・社外で分けて確認する機能を備えてます。
 
-          設定画面の例に従って、社内のドメイン（例えば「clear-code.com」など）を追記します。
+     - .. figure:: _static/TrustedDomainsExample.png
+          :width: 95%
+
+   * - 2. 「FlexConfirmMail設定 > 社内ドメイン」を選択し、自分の会社のドメインを記入します。
+
+          例えば右の例では「clear-code.com」を社内ドメインとして登録しています。
 
      - .. figure:: _static/TrustedDomains.png
           :width: 95%
 
-   * - 2. 「設定を保存して終了」を押下すれば完了です。
+   * - 3. 「設定を保存して終了」を押下すれば完了です。
 
      -
+
+.. hint::
+
+   基本設定の「宛先が社内ドメインのみの場合は確認をスキップする」にチェックを入れると、
+   社内の宛先のみのメールは、確認ダイアログを表示せずに送信できます。
+
+   .. figure:: _static/SkipIfNoExt.png
+      :align: left
+      :width: 300
+
 
 注意が必要なドメインを設定する
 ------------------------------
 
-宛先に含まれる場合に、特に注意が必要なドメインの一覧を設定します。
-
 .. list-table::
    :widths: 10 10
 
-   * - 1. 「FlexConfirmMail設定 > 注意が必要なドメイン」を選択します。
+   * - 1. FlexConfirmMailは注意が必要な宛先を検出する機能を備えています。
 
-          設定画面の例に従って、ドメインを追記します。
+     - .. figure:: _static/UnsafeDomainsExample.png
+          :width: 95%
+
+   * - 2. 「FlexConfirmMail設定 > 注意が必要なドメイン」を選択し、ドメインを記入します。
+
+          例えば「gmai.com」などのドメインの打ち間違え対策に利用できます。
 
      - .. figure:: _static/UnsafeDomains.png
           :width: 95%
 
-   * - 2. 「設定を保存して終了」を押下すれば完了です。
+   * - 3. 「設定を保存して終了」を押下すれば完了です。
+
      -
-
-**注意が必要なドメインの警告例**
-
-.. image:: _static/UnsafeDomainsExample.png
-   :width: 70%
 
 注意が必要なファイル名を設定する
 --------------------------------
 
-注意が必要な添付ファイルのキーワードを設定します。
-
 .. list-table::
    :widths: 10 10
 
-   * - 1. 「FlexConfirmMail設定 > 注意が必要なファイル名」を選択します。
+   * - 1. FlexConfirmMailは、注意が必要な添付ファイルを検出して、警告を促す機能を備えています。
 
-          設定画面の例に従って、キーワードを追記します。
+     - .. figure:: _static/UnsafeFilesExample.png
+          :width: 95%
+
+   * - 2. 「FlexConfirmMail設定 > 注意が必要なファイル名」を選択し、キーワードを設定します。
+
+          例えば「社外秘」など、機密性の高いファイルによく付与するワードを設定ください。
 
      - .. figure:: _static/UnsafeFiles.png
           :width: 95%
 
-   * - 2. 「設定を保存して終了」を押下すれば完了です。
+   * - 3. 「設定を保存して終了」を押下すれば完了です。
+
      -
-
-**注意が必要なファイル名の警告例**
-
-.. image:: _static/UnsafeFilesExample.png
-   :width: 70%
 
 運用に関するヒント
 ==================
@@ -138,7 +160,7 @@ FlexConfirmMailをインストールする
 ------------------------------------------
 
 Office 2013以降にはパフォーマンスを自動的に最適化する機能が組み込まれており、
-その一環としてアドオンを自動的に無効化することがあります。
+`その一環としてアドオンを自動的に無効化することがあります。 <https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled>`_
 
 FlexConfirmMailが自動的に無効化されるのを防止するには、
 グループポリシーで下記の設定を追加ください。
@@ -157,3 +179,33 @@ FlexConfirmMailが自動的に無効化されるのを防止するには、
       :width: 60%
 
 6. 「OK」ボタンを押下して確定する。
+
+.. rubric:: 脚注
+
+.. [#f1] FlexConfirmMailのインストーラを実行すると、プログラムフォルダ
+   :file:`C:\\Program Files\\FlexConfirmMail` に以下のファイルが展開されます。
+   
+   .. list-table::
+      :header-rows: 1
+      :widths: 4 15
+       
+      * - ファイル
+        - 説明
+      * - FlexConfirmMail.dll
+        - FlexConfirmMail本体
+      * - {en,zh}/FlexConfirmMail.dll
+        - 多言語対応リソース
+      * - FlexConfirmMail.dll.manifest
+        - FlexConfirmMailマニフェスト         
+      * - FlexConfirmMail.vsto
+        - Outlook向けのアドオン定義
+      * - fcm.ico
+        - アイコン画像
+      * - unins000.exe
+        - アンインストーラ
+      * - unins000.dat
+        - アンインストーラ
+      * - Microsoft.Office.Tools.Common.v2.0.Utilities.dll
+        - VSTOアドオンライブラリ
+      * - Microsoft.Office.Tools.Outlook.v2.0.Utilities.dll
+        - VSTOアドオンライブラリ
