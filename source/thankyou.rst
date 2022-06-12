@@ -15,4 +15,3 @@ Thank you for downloading FlexConfirmMail
 .. hint::
 
    * 最初のセットアップの手順は :any:`quickstart` を参照ください。
-   * FlexConfirmMailの基本は :any:`faq` にまとまってます。
