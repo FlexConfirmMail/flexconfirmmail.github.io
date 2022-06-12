@@ -101,6 +101,6 @@ rst_prolog = """
 .. |latest| replace:: v22.0
 .. |stable| replace:: 22.x
 .. |eol| replace:: 2022年12月
-.. |download| replace:: :raw-html:`<a href="{0}">ダウンロード</a>`
+.. |download| replace:: :raw-html:`<a href="{0}">こちらのリンク</a>`
 .. |auto-download| replace:: :raw-html:`<meta http-equiv="refresh" content="1;url={0}">`
 """.format(download_url)
