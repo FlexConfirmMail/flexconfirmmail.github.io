@@ -24,15 +24,19 @@ Microsoft Outlookのアドインとして導入することで、
 
        最新版のインストーラはこちらからダウンロードできます
 
-   * - :any:`enterprise`
+   * - :any:`development`
 
-       組織導入に最適化されたエンタープライズ版のご案内です。
+       最新の開発情報についてはこちらを参照ください
 
-     - 
+     - :any:`enterprise`
+
+       組織導入に最適化されたエンタープライズ版のご案内です
+
 
 .. toctree::
    :hidden:
 
    quickstart.rst
    download.rst
+   development.rst
    enterprise.rst
