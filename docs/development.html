@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>開発情報 &#8212; FlexConfirmMail</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="canonical" href="https://www.flexconfirmmail.com/development.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="法人のお客様へ" href="enterprise.html" />
+    <link rel="prev" title="ダウンロード" href="download.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ja">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7EP88Q2KZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7EP88Q2KZ1');
+</script>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="index.html">
+  <img src="_static/logo.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="quickstart.html">
+  クイックスタート
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="download.html">
+  ダウンロード
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  開発情報
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="enterprise.html">
+  法人のお客様へ
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/FlexConfirmMail" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.clear-code.com" rel="noopener" target="_blank" title="ClearCode"><img src="_static/clearcode.png" class="icon-link-image" alt="ClearCode"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="サイト内検索" aria-label="サイト内検索" autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   開発履歴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   技術解説
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flexconfirmmail">
+     1. FlexConfirmMailの基本的な仕組み
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#office">
+       1.1. Officeアドインとは
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       1.2. 送信イベントに処理を挟む
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/FlexConfirmMail/flexconfirmmail.github.io/edit/main/source/development.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="id1">
+<h1>開発情報<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>このページではFlexConfirmMailの技術情報と最新の開発動向についてまとめています。</p>
+<ul class="simple">
+<li><p>FlexConfirmMailのソースコードは <a class="reference external" href="https://github.com/FlexConfirmMail/Outlook">FlexConfirmMail/Outlook</a> で公開しています。</p></li>
+<li><p>バグ報告などは <a class="reference external" href="https://github.com/FlexConfirmMail/Outlook/issues">GitHub Issues</a> で受け付けています。</p></li>
+<li><p>FlexConfirmMailの一般的な使い方は <a class="reference internal" href="quickstart.html"><span class="doc">クイックスタート</span></a> を参照ください。</p></li>
+</ul>
+<section id="id2">
+<h2>開発履歴<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<dl class="simple">
+<dt>2022年6月12日 <a class="reference internal" href="quickstart.html"><span class="doc">クイックスタート</span></a> を更新しました。</dt><dd><ul class="simple">
+<li><p>「インストール後の流れ」などの節を追加しました。</p></li>
+<li><p>全体的にスクリーンショットを増補しました。</p></li>
+</ul>
+</dd>
+<dt>2022年4月13日 FlexConfirmMail v22.0を公開しました。</dt><dd><ul class="simple">
+<li><p>多国語（英語・中国語）に対応しました。</p></li>
+<li><p>社内ドメインのみの場合は確認をスキップできるようにしました。</p></li>
+<li><p>UIツールキットをWPFに移行し、新しい設定画面を追加しました。</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h2>技術解説<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="flexconfirmmail">
+<h3>1. FlexConfirmMailの基本的な仕組み<a class="headerlink" href="#flexconfirmmail" title="Permalink to this heading">#</a></h3>
+<section id="office">
+<h4>1.1. Officeアドインとは<a class="headerlink" href="#office" title="Permalink to this heading">#</a></h4>
+<p>Officeのアドインは一連の「イベント」から成り立っています。
+イベントとは、例えばドキュメントの表示・保存・削除といった主な処理の節目のことで、
+アドイン開発者はそれぞれのイベントに対して任意の処理を挟むことができます。</p>
+<p>例えば、Outlookであれば次のようなイベントが定義され、独自の処理を挟めるようになっています。</p>
+<ul class="simple">
+<li><p>Outlookの起動 (&quot;Startup&quot;イベント)</p></li>
+<li><p>新しいメールの受信 (&quot;NewMail&quot;イベント)</p></li>
+<li><p>メールの表示 (&quot;ItemLoad&quot;イベント)</p></li>
+<li><p>メールの送信 (&quot;ItemSend&quot;イベント)</p></li>
+<li><p>... などなど</p></li>
+</ul>
+<p>この中でも、とくにFlexConfirmMailは「メールの送信」のイベントに処理を挟むアドインです。</p>
+</section>
+<section id="id4">
+<h4>1.2. 送信イベントに処理を挟む<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
+<p>OfficeのAPI仕様では、次のような関数を定義することで、メールの送信の途中で任意の処理を挟めるようになっています。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">ApplicationEvents_11_ItemSendEventHandler</span><span class="p">(</span><span class="nb">object</span> <span class="n">Item</span><span class="p">,</span> <span class="n">out</span> <span class="nb">bool</span> <span class="n">Cancel</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="o">/*</span> <span class="n">任意の処理</span> <span class="o">*/</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>この関数は次の２つの引数をとります：</p>
+<ul class="simple">
+<li><p>一番目の引数 <cite>Item</cite> は送信メールを表すオブジェクトです。</p></li>
+<li><p>二番目の引数 <cite>Cancel</cite> は「送信をキャンセルするか否か？」を表す真偽値です。</p></li>
+</ul>
+<p>ここで重要なのは二番目の引数の <cite>Cancel</cite> です。
+FlexConfirmMailは一見複雑なアドオンに見えるのですが、ことOutlookの視点から見る限り、
+FlexConfirmMailの役割は、この <cite>Cancel</cite> の値を <cite>true</cite> or <cite>false</cite> のどちらにセットするかという判定に尽きます
+（具体的には、送信を実行する場合は <cite>false</cite> をセットし、中止する場合は <cite>true</cite> をセットします）。</p>
+<p>次の図は、処理の流れをフローチャートで示したものです。
+FlexConfirmMailのロジックが実は極めて単純であることが見て取れると思います <a class="footnote-reference brackets" href="#f1" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p><strong>図: FlexConfirmMailのフローチャート</strong></p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/Flowchart.svg"><img alt="_images/Flowchart.svg" src="_images/Flowchart.svg" width="600" /></a>
+</figure>
+<p>この構成から導かれるポイントとして、FlexConfirmMailは実際のメールの送信処理を行わないという点があります。
+あくまで送信を行うのはOutlookの役割なので、
+メールが宛先に配送される流れ自体はFlexConfirmMailの利用の有無にかかわらずまったく同じです。</p>
+<p class="rubric">脚注</p>
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">1</a><span class="fn-bracket">]</span></span>
+<p>もちろん「このロジックをどのように操作可能なUIとして表現するか？」は非常に難しいポイントで、
+様々に工夫をこらしている部分ではあるのですが、背後にある動作モデルそのものは記述の通り甚だ単純です。</p>
+</aside>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2022, ClearCode Inc..<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.0.1.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
