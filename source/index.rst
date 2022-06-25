@@ -24,9 +24,9 @@ Microsoft Outlookのアドインとして導入することで、
 
        最新版のインストーラはこちらからダウンロードできます
 
-   * - :any:`development`
+   * - :any:`support`
 
-       最新の開発情報についてはこちらを参照ください
+       FlexConfirmMailのサポートについてまとめてます
 
      - :any:`enterprise`
 
@@ -38,5 +38,5 @@ Microsoft Outlookのアドインとして導入することで、
 
    quickstart.rst
    download.rst
-   development.rst
+   support.rst
    enterprise.rst
