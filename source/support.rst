@@ -15,10 +15,10 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>
      - バージョン
      - インストーラ
      - リリースノート
-   * - 2022年7月1日 (予定)
+   * - 2022年7月 (予定)
      - FlexConfirmMail v22.1
      - --
-     - --
+     - :any:`リリースノート <changelog/v22.1>`
    * - 2022年4月11日
      - FlexConfirmMail v22.0
      - :any:`インストーラ <thankyou>`
