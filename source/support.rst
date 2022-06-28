@@ -57,3 +57,8 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com>`
 * 社内展開時などの法人向けサポートが必要な場合は、開発元のクリアコードが承ります。
 * 契約の費用と特典については :any:`enterprise` を参照ください。
 * 法人向けサポートに関する問い合わせは `こちらの問い合わせフォーム <https://www.clear-code.com/contact>`_ からお願いします。
+
+.. toctree::
+   :hidden:
+
+   changelog/v22.0.rst
