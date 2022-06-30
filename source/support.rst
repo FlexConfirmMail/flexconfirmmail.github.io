@@ -2,19 +2,10 @@
 サポート情報
 ============
 
-FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com>`_ が開発するフリーソフトウェアです。
-
-* このサイトの最終更新日は |today| です。
-
-.. contents:: 目次
-   :local:
-   :backlinks: none
-
-リリースについて
-================
+FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>`_ が開発するソフトウェアです。
 
 公開済みバージョン
-------------------
+==================
 
 .. list-table::
    :header-rows: 1
@@ -34,13 +25,15 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com>`
      - :any:`リリースノート <changelog/v22.0>`
 
 リリーススケジュール
---------------------
+====================
 
-* FlexConfirmMailは年に1回、新しいメジャーバージョンを公開します。
-* 次のメジャーバージョンまでは、四半期に一回のペースでマイナーバージョンを公開します。
+FlexConfirmMailは年に1回、新しいメジャーバージョンをリリースします。
+次のメジャーバージョンまでは、通例だと2〜3回のマイナーバージョンを公開しています。
 
 .. figure:: _static/release.svg
    :width: 600
+
+それぞれのメジャーバージョンは、次のメジャーリリースまでサポートされます。
 
 サポートについて
 ================
@@ -48,7 +41,7 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com>`
 フリーソフトウェアプロジェクト
 ------------------------------
 
-* FlexConfirmMailは `ISCライセンス <https://opensource.org/licenses/ISC>`_ で配布しているフリーソフトウェアです。
+* FlexConfirmMailはISCライセンスで配布しているフリーソフトウェアです。
 * 公開プロジェクトとしてのバグ報告は `GitHub Issues <https://github.com/FlexConfirmMail/Outlook/issues>`_ で受け付けています。
 
 法人向けサポート
@@ -62,3 +55,26 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com>`
    :hidden:
 
    changelog/v22.0.rst
+
+ISCライセンス
+=============
+
+本サイトを含めたOutlook版のFlexConfirmMailのソースコードおよびリソースはISCライセンスで配布しています。
+
+.. code-block:: text
+
+   Copyright 2021-2022 Fujimoto Seiji <fujimoto@clear-code.com>
+   Copyright 2022 Yuki Hiroshi <yuki@clear-code.com>
+   Copyright 2022 Yoshimoto Yukiko <yoshimoto@clear-code.com>
+
+   Permission to use, copy, modify, and/or distribute this software for any
+   purpose with or without fee is hereby granted, provided that the above
+   copyright notice and this permission notice appear in all copies.
+
+   THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+   REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+   FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+   INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+   LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+   OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+   PERFORMANCE OF THIS SOFTWARE.
