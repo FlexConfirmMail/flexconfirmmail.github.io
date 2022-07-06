@@ -53,7 +53,6 @@ exclude_patterns = []
 #
 html_theme = 'pydata_sphinx_theme'
 html_title = 'FlexConfirmMail'
-html_logo = '_static/logo.svg'
 html_baseurl = 'https://www.flexconfirmmail.com/'
 html_css_files = ['custom.css']
 html_show_copyright = False
@@ -79,6 +78,10 @@ html_theme_options = {
    "use_edit_page_button": True,
    "navigation_with_keys": False,
    "show_prev_next": False,
+   "logo": {
+      "image_light": "logo.svg",
+      "image_dark": "logo-dark.png",
+   }
 }
 
 
