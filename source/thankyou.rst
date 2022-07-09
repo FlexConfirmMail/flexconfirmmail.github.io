@@ -6,13 +6,14 @@ Thank you for downloading FlexConfirmMail
 
 * FlexConfirmMailをダウンロードいただきありがとうございます。
 * インストーラのダウンロードは自動的に開始します。
-* ダウンロードが始まらない場合は |download| をクリックください。
+* ダウンロードが始まらない場合は `こちらのリンク <https://github.com/FlexConfirmMail/Outlook/releases/download/v22.1/FlexConfirmMailSetup-22.1-Free.exe>`_ をクリックください。
 
 .. figure:: _static/logo.svg
 
-|auto-download|
+.. raw:: html
+
+   <meta http-equiv="refresh" content="1;url=https://github.com/FlexConfirmMail/Outlook/releases/download/v22.1/FlexConfirmMailSetup-22.1-Free.exe">
 
 .. hint::
 
-   * インストールの手順は :any:`quickstart` に詳しい解説があります。
-   * 「FlexConfirmMailをインストールする」の章の流れに沿ってセットアップください。
+   最初のセットアップの流れは :any:`quickstart` を参照ください。

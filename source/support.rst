@@ -4,6 +4,12 @@
 
 FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>`_ が開発するソフトウェアです。
 
+.. toctree::
+   :hidden:
+
+   changelog/v22.1.rst
+   changelog/v22.0.rst
+
 公開済みバージョン
 ==================
 
@@ -15,13 +21,13 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>
      - バージョン
      - インストーラ
      - リリースノート
-   * - 2022年7月 (予定)
+   * - 2022年7月9日
      - FlexConfirmMail v22.1
-     - --
+     - :any:`インストーラ <download>`
      - :any:`リリースノート <changelog/v22.1>`
    * - 2022年4月11日
      - FlexConfirmMail v22.0
-     - :any:`インストーラ <thankyou>`
+     - --
      - :any:`リリースノート <changelog/v22.0>`
 
 リリーススケジュール
@@ -50,11 +56,6 @@ FlexConfirmMailは年に1回、新しいメジャーバージョンをリリー�
 * 社内展開時などの法人向けサポートが必要な場合は、開発元のクリアコードが承ります。
 * 契約の費用と特典については :any:`enterprise` を参照ください。
 * 法人向けサポートに関する問い合わせは `こちらの問い合わせフォーム <https://www.clear-code.com/contact>`_ からお願いします。
-
-.. toctree::
-   :hidden:
-
-   changelog/v22.0.rst
 
 ISCライセンス
 =============
