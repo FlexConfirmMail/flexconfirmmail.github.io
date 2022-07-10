@@ -47,7 +47,7 @@ FlexConfirmMailをインストールする
 .. list-table::
    :widths: 10 10
 
-   * - 1. FlexConfirmMailは「送信」ボタンをクリックした際に有効になるアドオンです。
+   * - 1. FlexConfirmMailは「送信」ボタンをクリックした際に有効になるアドインです。
 
      - .. figure:: _static/SendButton.png
           :width: 95%
@@ -173,7 +173,7 @@ FlexConfirmMailをインストールする
 
    * - 3. 「社内ドメイン設定」を選択し、自社ドメインを登録します。
 
-          右の図の欄に一行に一件ずつ入力します。
+          「有効」を選択し、テキスト欄に一行に一件ずつ入力します。
 
      - .. figure:: _static/PolicyTrustedDomains.png
           :width: 95%
@@ -184,7 +184,7 @@ FlexConfirmMailをインストールする
 
    * - 5. ユーザーの設定画面では次のように表示されます。
 
-          組織の既定値に対して、個別の事情に応じて微調整できます。
+          組織の推奨ポリシーに対して、個別の事情に応じた微調整が可能になります。
 
      - .. figure:: _static/PolicyUserConfig.png
           :width: 95%
@@ -200,11 +200,11 @@ FlexConfirmMailをインストールする
 
     % FlexConfirmMailSetup.exe /SILENT
 
-アドオンが自動的に無効化されるのを防止する
+アドインが自動的に無効化されるのを防止する
 ------------------------------------------
 
 Office 2013以降にはパフォーマンスを自動的に最適化する機能が組み込まれており、
-`その一環としてアドオンを自動的に無効化することがあります。 <https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled>`_
+`その一環としてアドインを自動的に無効化することがあります。 <https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled>`_
 
 FlexConfirmMailが自動的に無効化されるのを防止するには、
 グループポリシーで下記の設定を追加ください。
@@ -213,7 +213,7 @@ FlexConfirmMailが自動的に無効化されるのを防止するには、
 
 2. 「管理用テンプレート > Microsoft Outlook 2016 > その他」を順番に選択する。
 
-3. 「管理対象アドオンの一覧」の項目をダブルクリックする。
+3. 「管理対象アドインの一覧」の項目をダブルクリックする。
 
 4. 設定を「有効」にした上で、オプション欄の「表示」ボタンをクリックする。
 
@@ -223,6 +223,20 @@ FlexConfirmMailが自動的に無効化されるのを防止するには、
       :width: 60%
 
 6. 「OK」ボタンを押下して確定する。
+
+アドインの国際化対応について
+----------------------------
+
+FlexConfirmMailは日本語・英語・中国語の三カ国語に対応しています。
+
+標準のインストーラに、各言語版の翻訳リソースも同梱されています。
+Windowsの言語設定（設定 > 言語 > Windowsの表示言語）を検出して、
+自動的に表示言語が切り替わりますので、特別な設定は必要ありません。
+
+.. figure:: _static/ConfigDialogEnglish.png
+   :width: 60%
+
+   英語環境での表示例
 
 .. rubric:: 脚注
 
@@ -242,7 +256,7 @@ FlexConfirmMailが自動的に無効化されるのを防止するには、
       * - FlexConfirmMail.dll.manifest
         - FlexConfirmMailマニフェスト         
       * - FlexConfirmMail.vsto
-        - Outlook向けのアドオン定義
+        - Outlook向けのアドイン定義
       * - fcm.ico
         - アイコン画像
       * - unins000.exe
@@ -250,6 +264,6 @@ FlexConfirmMailが自動的に無効化されるのを防止するには、
       * - unins000.dat
         - アンインストーラ
       * - Microsoft.Office.Tools.Common.v2.0.Utilities.dll
-        - VSTOアドオンライブラリ
+        - VSTOアドインライブラリ
       * - Microsoft.Office.Tools.Outlook.v2.0.Utilities.dll
-        - VSTOアドオンライブラリ
+        - VSTOアドインライブラリ
