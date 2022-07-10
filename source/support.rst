@@ -60,7 +60,7 @@ FlexConfirmMailは年に1回、新しいメジャーバージョンをリリー�
 ISCライセンス
 =============
 
-本サイトを含めたOutlook版のFlexConfirmMailのソースコードおよびリソースはISCライセンスで配布しています。
+Outlook向けFlexConfirmMailのソースコード、インストーラ及びドキュメントはISCライセンスで配布しています。
 
 .. code-block:: text
 
