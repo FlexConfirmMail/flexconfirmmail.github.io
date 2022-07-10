@@ -21,3 +21,15 @@ table.table-of-contents td  p {
     color: #343434;
     margin-bottom: 0.3em;
 }
+
+html[data-theme="dark"] .logo img {
+    filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(307deg) brightness(104%) contrast(104%);
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5 {
+    color: #aaa;
+}
