@@ -2,9 +2,9 @@
 クイックスタート
 ================
 
-このページでは、FlexConfirmMailをOutlookに導入する方法について解説します。
+このページでは、FlexConfirmMailをOutlookに導入する手順を解説します。
 
-.. contents:: 目次
+.. contents::
    :local:
    :backlinks: none
 
@@ -35,12 +35,6 @@ FlexConfirmMailをインストールする
      - .. figure:: _static/Ribbon.png
           :width: 95%
 
-.. hint::
-
-   * FlexConfirmMailを構成するファイルは :file:`C:\\Program Files\\FlexConfirmMail` に格納されます。
-   * 詳しいファイルの一覧とそれぞれの説明は脚注 [#f1]_ に掲載しています。
-   * 単一のインストールで32ビット・64ビットの両方のOutlookに対応しています。
-
 インストール後の流れ
 --------------------
 
@@ -62,7 +56,9 @@ FlexConfirmMailをインストールする
      - .. figure:: _static/CountDialog.png
           :width: 95%
 
-   * - 4. この一連の挙動はカスタマイズ可能です。詳しくは次章の「設定とカスタマイズ」を参照ください。
+   * - 4. この一連の挙動はカスタマイズ可能です。
+
+          次の「設定とカスタマイズ」で基本的なセットアップを解説します。
 
      - 
  
@@ -77,6 +73,8 @@ FlexConfirmMailをインストールする
 
    * - 1. FlexConfirmMailは宛先を社内・社外で分けて確認する機能を備えてます。
 
+          この区別は「社内ドメイン」設定に基づきます。
+
      - .. figure:: _static/TrustedDomainsExample.png
           :width: 95%
 
@@ -90,16 +88,6 @@ FlexConfirmMailをインストールする
    * - 3. 「設定を保存して終了」を押下すれば完了です。
 
      -
-
-.. versionadded:: 22.0
-
-   基本設定の「宛先が社内ドメインのみの場合は確認をスキップする」にチェックを入れると、
-   社内の宛先のみのメールは、確認ダイアログを表示せずに送信できます。
-
-   .. figure:: _static/SkipIfNoExt.png
-      :align: left
-      :width: 300
-
 
 注意が必要なドメインを設定する
 ------------------------------
@@ -145,125 +133,23 @@ FlexConfirmMailをインストールする
 
      -
 
-エンタープライズ版向け
-======================
+記事のまとめ
+============
 
-* 有償で配布している :doc:`エンタープライズ版 <enterprise>` は、集中管理機能を搭載しています。
-* 主に組織導入するケースを想定した機能です。この機能を利用することで、誤送信対策を手間なく運用できます。
+ここまでの手順で達成できたこと
+------------------------------
 
-グループポリシーで組織の既定値を設定する
-----------------------------------------
+これで最初の導入手順は完了です。ここまでの手順で、次の2点が達成できました。
 
-* 以下では「社内ドメイン」の設定を例に組織の既定値を設定する方法を解説します。
-* 他の設定項目についても、同じ要領で設定を行うことができます。
+* 誤送信対策アドインFlexConfirmMailをOutlookに導入することができました。
+* 基本的なセットアップも完了し、社内・外部の宛先などを区別してチェックできるようになりました。
 
-.. list-table::
-   :widths: 10 10
+既に最低限のセットアップは完了していますので、後は好みに応じて動作をカスタマイズください。
 
-   * - 1. 契約時に共有されたURLからポリシーテンプレートを入手し、配置します。
+具体的なカスタマイズの手順については、次の各リンク先にまとまっています。
 
-     - .. figure:: _static/PolicyADMX.png
-          :width: 95%
+ここからどこへ？
+----------------
 
-   * - 2. グループポリシーエディタを起動して
-          「コンピューターの構成 > FlexConfirmMail > 既定値」を選択します。
-
-     - .. figure:: _static/PolicyDefault.png
-          :width: 95%
-
-   * - 3. 「社内ドメイン設定」を選択し、自社ドメインを登録します。
-
-          「有効」を選択し、テキスト欄に一行に一件ずつ入力します。
-
-     - .. figure:: _static/PolicyTrustedDomains.png
-          :width: 95%
-
-   * - 4. 「OK」ボタンを押下すれば完了です。
-
-     -
-
-   * - 5. ユーザーの設定画面では次のように表示されます。
-
-          組織の推奨ポリシーに対して、個別の事情に応じた微調整が可能になります。
-
-     - .. figure:: _static/PolicyUserConfig.png
-          :width: 95%
-
-運用に関するヒント
-==================
-
-インストーラをサイレント実行する
---------------------------------
-
-組織の端末に配布する時などに、FlexConfirmMailをサイレントインストールしたい場合は、
-次のように/SILENTオプションを利用します::
-
-    % FlexConfirmMailSetup.exe /SILENT
-
-アドインが自動的に無効化されるのを防止する
-------------------------------------------
-
-Office 2013以降にはパフォーマンスを自動的に最適化する機能が組み込まれており、
-`その一環としてアドインを自動的に無効化することがあります。 <https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled>`_
-
-FlexConfirmMailが自動的に無効化されるのを防止するには、
-グループポリシーで下記の設定を追加ください。
-
-1. グループポリシーエディタを開き、「ユーザーの構成」を開く。
-
-2. 「管理用テンプレート > Microsoft Outlook 2016 > その他」を順番に選択する。
-
-3. 「管理対象アドインの一覧」の項目をダブルクリックする。
-
-4. 設定を「有効」にした上で、オプション欄の「表示」ボタンをクリックする。
-
-5. 値の名前に FlexConfirmMail と入力し、値を 1 に設定する。
-
-   .. figure:: _static/resiliency.png
-      :width: 60%
-
-6. 「OK」ボタンを押下して確定する。
-
-アドインの国際化対応について
-----------------------------
-
-FlexConfirmMailは日本語・英語・中国語の三カ国語に対応しています。
-
-標準のインストーラに、各言語版の翻訳リソースも同梱されています。
-Windowsの言語設定（設定 > 言語 > Windowsの表示言語）を検出して、
-自動的に表示言語が切り替わりますので、特別な設定は必要ありません。
-
-.. figure:: _static/ConfigDialogEnglish.png
-   :width: 60%
-
-   英語環境での表示例
-
-.. rubric:: 脚注
-
-.. [#f1] FlexConfirmMailのインストーラを実行すると、プログラムフォルダ
-   :file:`C:\\Program Files\\FlexConfirmMail` に以下のファイルが展開されます。
-   
-   .. list-table::
-      :header-rows: 1
-      :widths: 4 15
-       
-      * - ファイル
-        - 説明
-      * - FlexConfirmMail.dll
-        - FlexConfirmMail本体
-      * - {en,zh}/FlexConfirmMail.dll
-        - 多言語対応リソース
-      * - FlexConfirmMail.dll.manifest
-        - FlexConfirmMailマニフェスト         
-      * - FlexConfirmMail.vsto
-        - Outlook向けのアドイン定義
-      * - fcm.ico
-        - アイコン画像
-      * - unins000.exe
-        - アンインストーラ
-      * - unins000.dat
-        - アンインストーラ
-      * - Microsoft.Office.Tools.Common.v2.0.Utilities.dll
-        - VSTOアドインライブラリ
-      * - Microsoft.Office.Tools.Outlook.v2.0.Utilities.dll
-        - VSTOアドインライブラリ
+* FlexConfirmMailのよくある設定と運用タスクは :any:`howto` にまとまっています。
+* リリースサイクルなどのプロジェクト全体に関する情報は :any:`support` にまとまっています。

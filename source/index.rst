@@ -28,23 +28,29 @@ Microsoft Outlookのアドインとして導入することで、
 
        FlexConfirmMailの導入方法と基本的な使い方を説明します
 
-     - :any:`download`
+     - :any:`howto`
+
+       FlexConfirmMailのよくある使い方をまとめた運用マニュアル集です。
+
+   * - :any:`download`
 
        最新版のインストーラはこちらからダウンロードできます
 
-   * - :any:`support`
+     - :any:`support`
 
        FlexConfirmMailのリリース情報はこちらを参照ください
 
-     - :any:`enterprise`
+   * - :any:`enterprise`
 
        組織導入に最適化されたエンタープライズ版のご案内です
 
+     -
 
 .. toctree::
    :hidden:
 
    quickstart.rst
+   howto.rst
    download.rst
    support.rst
    enterprise.rst
