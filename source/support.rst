@@ -1,8 +1,12 @@
-============
-サポート情報
-============
+========
+開発情報
+========
 
-FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>`_ が開発するソフトウェアです。
+このページではFlexConfirmMailの開発とサポートに関する情報をまとめます。
+
+.. contents::
+   :local:
+   :backlinks: none
 
 .. toctree::
    :hidden:
@@ -10,8 +14,11 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>
    changelog/v22.1.rst
    changelog/v22.0.rst
 
+開発について
+============
+
 公開済みバージョン
-==================
+------------------
 
 .. list-table::
    :header-rows: 1
@@ -30,35 +37,24 @@ FlexConfirmMailは `株式会社クリアコード <https://www.clear-code.com/>
      - --
      - :any:`リリースノート <changelog/v22.0>`
 
-リリーススケジュール
-====================
+リリースサイクル
+----------------
 
-FlexConfirmMailは年に1回、新しいメジャーバージョンをリリースします。
-次のメジャーバージョンまでは、通例だと2〜3回のマイナーバージョンを公開しています。
+* FlexConfirmMailは年に1回、新しいメジャーバージョンをリリースします。
+* 次のメジャーバージョンまでは、通例だと2〜3回のマイナーバージョンを公開しています。
+* それぞれのメジャーバージョンは、次のメジャーリリースまでサポートされます。
 
 .. figure:: _static/release.svg
    :width: 600
 
-それぞれのメジャーバージョンは、次のメジャーリリースまでサポートされます。
+FlexConfirmMailの開発元
+-----------------------
 
-サポートについて
-================
+* FlexConfirmMailは株式会社クリアコードが開発するソフトウェアです。
+* クリアコードに関する詳細は `公式サイト <https://www.clear-code.com/>`_ を参照ください。
 
-フリーソフトウェアプロジェクト
-------------------------------
-
-* FlexConfirmMailはISCライセンスで配布しているフリーソフトウェアです。
-* 公開プロジェクトとしてのバグ報告は `GitHub Issues <https://github.com/FlexConfirmMail/Outlook/issues>`_ で受け付けています。
-
-法人向けサポート
-----------------
-
-* 社内展開時などの法人向けサポートが必要な場合は、開発元のクリアコードが承ります。
-* 契約の費用と特典については :any:`enterprise` を参照ください。
-* 法人向けサポートに関する問い合わせは `こちらの問い合わせフォーム <https://www.clear-code.com/contact>`_ からお願いします。
-
-ISCライセンス
-=============
+FlexConfirmMailの配布ライセンス
+-------------------------------
 
 Outlook向けFlexConfirmMailのソースコード、インストーラ及びドキュメントはISCライセンスで配布しています。
 
@@ -79,3 +75,19 @@ Outlook向けFlexConfirmMailのソースコード、インストーラ及びド�
    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
    PERFORMANCE OF THIS SOFTWARE.
+
+サポートが必要な時は
+====================
+
+フリーソフトウェアプロジェクト
+------------------------------
+
+* FlexConfirmMailはISCライセンスで配布しているフリーソフトウェアです。
+* 公開プロジェクトとしてのバグ報告は `GitHub Issues <https://github.com/FlexConfirmMail/Outlook/issues>`_ で受け付けています。
+
+法人向けサポート
+----------------
+
+* 社内展開時などの法人向けサポートが必要な場合は、開発元のクリアコードが承ります。
+* 契約の費用と特典については :any:`enterprise` を参照ください。
+* 法人向けサポートに関する問い合わせは `こちらの問い合わせフォーム <https://www.clear-code.com/contact>`_ からお願いします。
