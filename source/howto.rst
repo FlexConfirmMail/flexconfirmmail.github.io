@@ -8,42 +8,43 @@ HowToガイド
    :local:
    :backlinks: none
 
-インストール
-============
+よくある誤送信とその対策
+========================
 
-インストーラをサイレント実行する
---------------------------------
+To/Cc・Bccの使い分けのミスを検出する
+------------------------------------
 
-FlexConfirmMailを資産管理ソフトウェアで配布する場合、
-ダイアログを表示せずにインストール処理を実行する必要があります。
+多数の宛先に一斉送信する場合、To/Ccを利用すると個人情報が漏洩してしまうため、
+Bccを利用して送信する必要があります。
 
-この場合は次のように ``/SILENT`` オプションを付して実行ください。
+このミスを検知する機能として、To/Ccに多数のドメインが含まれる場合に、警告を出力できます。
 
-::
+.. list-table::
+   :widths: 10 10
 
-    % FlexConfirmMailSetup.exe /SILENT
+   * - 1. OutlookのホームタブからFlexConfirmMailのアイコンをクリックします。
 
-アドインを多言語環境で利用する
-------------------------------
+     - .. figure:: _static/Ribbon.png
+          :width: 95%
 
-FlexConfirmMailは日本語・英語・中国語の三カ国語に対応しています。
+   * - 2. 「To/CCに一定数以上のドメインが含まれている場合に警告する」にチェックを入れ、警告対象のしきい値を設定します。
 
-標準のインストーラに、各言語版の翻訳リソースも同梱されています。
-Windowsの言語設定（設定 > 言語 > Windowsの表示言語）を検出して、
-自動的に表示言語が切り替わりますので、単純にインストールすれば問題ありません。
+     - .. figure:: _static/SafeBcc.png
+          :width: 95%
 
-.. figure:: _static/ConfigDialogEnglish.png
-   :width: 60%
+   * - 3. 「設定を保存して終了」を押下すれば完了です。
 
-   英語環境での表示例
+     -
 
-カスタマイズ
-============
+   * - 4. 送信時に次のような警告が表示されます。
+
+     - .. figure:: _static/SafeBccExample.png
+          :width: 95%
 
 社内の宛先のみの場合は確認をスキップする
 ----------------------------------------
 
-送信時の確認の手間を省力化する機能です。
+送信確認の手間を簡略化する機能です。
 宛先に外部ドメインが含まれない場合は、即座に送信を実行するように設定できます。
 
 .. list-table::
@@ -68,34 +69,58 @@ Windowsの言語設定（設定 > 言語 > Windowsの表示言語）を検出し
      -  .. figure:: _static/SkipIfNoExtExample.png
            :width: 400
 
+アドインを社内で展開する
+========================
 
-多数のドメインにTo/Ccで送信する場合に警告する
----------------------------------------------
+インストーラをサイレント実行する
+--------------------------------
 
-Bccで送信すべきところを、To/Ccで送信しようとしているケース [#f1]_ を想定した機能です。
+FlexConfirmMailを資産管理ソフトウェアで配布する場合、
+ダイアログを表示せずにインストール処理を実行する必要があります。
 
+この場合は次のように ``/SILENT`` オプションを付して実行ください。
 
-.. list-table::
-   :widths: 10 10
+::
 
-   * - 1. OutlookのホームタブからFlexConfirmMailのアイコンをクリックします。
+    % FlexConfirmMailSetup.exe /SILENT
 
-     - .. figure:: _static/Ribbon.png
-          :width: 95%
+アドインを多言語環境に展開する
+------------------------------
 
-   * - 2. 「To/CCに一定数以上のドメインが含まれている場合に警告する」にチェックを入れ、警告対象のしきい値を設定します。
+FlexConfirmMailは日本語・英語・中国語の三カ国語に対応しています。
 
-     - .. figure:: _static/SafeBcc.png
-          :width: 95%
+標準のインストーラに、各言語版の翻訳リソースも同梱されています。
+Windowsの言語設定（設定 > 言語 > Windowsの表示言語）を検出して、
+自動的に表示言語が切り替わりますので、単純にインストールすれば問題ありません。
 
-   * - 3. 「設定を保存して終了」を押下すれば完了です。
+.. figure:: _static/ConfigDialogEnglish.png
+   :width: 60%
 
-     -
+   英語環境での表示例
 
-   * - 4. 送信時に次のような警告が表示されます。
+アドインが自動的に無効化されるのを防ぐ
+--------------------------------------
 
-     - .. figure:: _static/SafeBccExample.png
-          :width: 95%
+Office 2013以降にはパフォーマンスを自動的に最適化する機能が組み込まれており、
+その一環としてアドインを自動的に無効化することがあります [#f2]_
+
+FlexConfirmMailが自動的に無効化されるのを防止するには、
+グループポリシーで下記の設定を追加ください。
+
+1. グループポリシーエディタを開き、「ユーザーの構成」を開く。
+
+2. 「管理用テンプレート > Microsoft Outlook 2016 > その他」を順番に選択する。
+
+3. 「管理対象アドインの一覧」の項目をダブルクリックする。
+
+4. 設定を「有効」にした上で、オプション欄の「表示」ボタンをクリックする。
+
+5. 値の名前に FlexConfirmMail と入力し、値を 1 に設定する。
+
+   .. figure:: _static/resiliency.png
+      :width: 60%
+
+6. 「OK」ボタンを押下して確定する。
 
 
 エンタープライズ版
@@ -139,34 +164,6 @@ Bccで送信すべきところを、To/Ccで送信しようとしているケー
      - .. figure:: _static/PolicyUserConfig.png
           :width: 95%
 
-よくあるトラブル
-================
-
-アドインが自動的に無効化されるのを防ぐ
---------------------------------------
-
-Office 2013以降にはパフォーマンスを自動的に最適化する機能が組み込まれており、
-その一環としてアドインを自動的に無効化することがあります [#f2]_
-
-FlexConfirmMailが自動的に無効化されるのを防止するには、
-グループポリシーで下記の設定を追加ください。
-
-1. グループポリシーエディタを開き、「ユーザーの構成」を開く。
-
-2. 「管理用テンプレート > Microsoft Outlook 2016 > その他」を順番に選択する。
-
-3. 「管理対象アドインの一覧」の項目をダブルクリックする。
-
-4. 設定を「有効」にした上で、オプション欄の「表示」ボタンをクリックする。
-
-5. 値の名前に FlexConfirmMail と入力し、値を 1 に設定する。
-
-   .. figure:: _static/resiliency.png
-      :width: 60%
-
-6. 「OK」ボタンを押下して確定する。
-
 .. rubric:: 脚注
 
-.. [#f1] To/Cc/Bccの区分については `総務省「国民のためのサイバーセキュリティガイド メールの誤送信」 <https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/enduser/enduser_security02_12.html>`_ を参照ください。
-.. [#f2] 詳しくはMicrosoft公式ドキュメント `Support for keeping add-ins enabled <https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled>`_ を参照ください。
+.. [#f1] 詳しくはMicrosoft公式ドキュメント `Support for keeping add-ins enabled <https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled>`_ を参照ください。
