@@ -16,4 +16,5 @@ Thank you for downloading FlexConfirmMail
 
 .. hint::
 
-   最初のセットアップの流れは :any:`quickstart` を参照ください。
+   * 初期セットアップの手順は :any:`quickstart` にまとまっています。
+   * 基本的な設定を含めた、最初の使い始めの手順を抑えることができます。
