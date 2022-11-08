@@ -17,9 +17,13 @@ table.table-of-contents td {
     padding-bottom: 0.5em;
 }
 
-table.table-of-contents td  p {
+table.table-of-contents td p {
     color: #343434;
     margin-bottom: 0.3em;
+}
+
+html[data-theme="dark"] table.table-of-contents td p {
+    color: #fafafa;
 }
 
 html[data-theme="dark"] .logo img {
