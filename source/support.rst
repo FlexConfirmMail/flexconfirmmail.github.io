@@ -11,6 +11,7 @@
 .. toctree::
    :hidden:
 
+   changelog/v22.2.rst
    changelog/v22.1.rst
    changelog/v22.0.rst
 
@@ -28,9 +29,13 @@
      - バージョン
      - インストーラ
      - リリースノート
+   * - 2022年12月2日
+     - FlexConfirmMail v22.2
+     - :any:`インストーラ <download>`
+     - :any:`リリースノート <changelog/v22.2>`
    * - 2022年7月9日
      - FlexConfirmMail v22.1
-     - :any:`インストーラ <download>`
+     - --
      - :any:`リリースノート <changelog/v22.1>`
    * - 2022年4月11日
      - FlexConfirmMail v22.0
