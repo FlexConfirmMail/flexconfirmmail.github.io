@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>クイックスタート &#8212; FlexConfirmMail</title>
+    <title>HowToガイド &#8212; FlexConfirmMail</title>
   
   
   
@@ -40,12 +40,12 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/translations.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'quickstart';</script>
-    <link rel="canonical" href="https://www.flexconfirmmail.com/quickstart.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'howto';</script>
+    <link rel="canonical" href="https://www.flexconfirmmail.com/howto.html" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="HowToガイド" href="howto.html" />
-    <link rel="prev" title="FlexConfirmMailプロジェクト" href="index.html" />
+    <link rel="next" title="ダウンロード" href="download.html" />
+    <link rel="prev" title="クイックスタート" href="quickstart.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="ja">
   </head>
@@ -130,15 +130,15 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="quickstart.html">
                         クイックスタート
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="howto.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         HowToガイド
                       </a>
                     </li>
@@ -255,15 +255,15 @@
     </p>
     <ul id="navbar-main-elements" class="navbar-nav">
         
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="quickstart.html">
                         クイックスタート
                       </a>
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="howto.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         HowToガイド
                       </a>
                     </li>
@@ -363,39 +363,39 @@
             
             <article class="bd-article" role="main">
               
-  <section id="id1">
-<h1>クイックスタート<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">#</a></h1>
-<p>このページでは、FlexConfirmMailをOutlookに導入する手順を解説します。</p>
-<nav class="contents local" id="id2">
+  <section id="howto">
+<h1>HowToガイド<a class="headerlink" href="#howto" title="この見出しへのパーマリンク">#</a></h1>
+<p>このページは、FlexConfirmMailのよくある使い方やカスタマイズをまとめた運用マニュアル集です。</p>
+<nav class="contents local" id="id1">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id3" id="id12">インストール</a></p>
+<li><p><a class="reference internal" href="#id2" id="id13">よくある誤送信とその対策</a></p>
 <ul>
-<li><p><a class="reference internal" href="#flexconfirmmail" id="id13">FlexConfirmMailをインストールする</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id14">インストール後の流れ</a></p></li>
+<li><p><a class="reference internal" href="#to-ccbcc" id="id14">To/Cc・Bccの使い分けのミスを検出する</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id15">不審なドメインへの送信をチェックする</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id16">社内の宛先のみの場合は確認をスキップする</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id6" id="id15">設定とカスタマイズ</a></p>
+<li><p><a class="reference internal" href="#id5" id="id17">アドインを社内で展開する</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id7" id="id16">社内ドメインを設定する</a></p></li>
-<li><p><a class="reference internal" href="#id8" id="id17">注意が必要なファイル名を設定する</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id18">インストーラをサイレント実行する</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id19">アドインを多言語環境に展開する</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id20">アドインが自動的に無効化されるのを防ぐ</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id9" id="id18">記事のまとめ</a></p>
+<li><p><a class="reference internal" href="#id10" id="id21">エンタープライズ版</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id10" id="id19">ここまでの手順で達成できたこと</a></p></li>
-<li><p><a class="reference internal" href="#id11" id="id20">ここからどこへ？</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id22">グループポリシーで既定値を管理する</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
-<section id="id3">
-<h2>インストール<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">#</a></h2>
-<ul class="simple">
-<li><p>初期セットアップの流れを解説した動画 「<a class="reference external" href="https://www.youtube.com/watch?v=cBfAGb6Ub20">2分で始める誤送信対策</a>」も用意しています。</p></li>
-<li><p>動画の方が分かりやすいという方は上のリンクからご覧ください。</p></li>
-</ul>
-<section id="flexconfirmmail">
-<h3>FlexConfirmMailをインストールする<a class="headerlink" href="#flexconfirmmail" title="この見出しへのパーマリンク">#</a></h3>
+<section id="id2">
+<h2>よくある誤送信とその対策<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">#</a></h2>
+<section id="to-ccbcc">
+<h3>To/Cc・Bccの使い分けのミスを検出する<a class="headerlink" href="#to-ccbcc" title="この見出しへのパーマリンク">#</a></h3>
+<p>多数の宛先に一斉送信する場合、To/Ccを利用すると個人情報が漏洩してしまうため、
+Bccを利用して送信する必要があります。</p>
+<p>このミスを検知する機能として、To/Ccに多数のドメインが含まれる場合に、警告を出力できます。</p>
 <table class="table">
 <colgroup>
 <col style="width: 50.0%" />
@@ -403,25 +403,7 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple">
-<li><p>FlexConfirmMailの最新のEXEインストーラを <a class="reference internal" href="download.html"><span class="doc">ダウンロード</span></a> から取得します。</p></li>
-</ol>
-</td>
-<td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/download.png"><img alt="_images/download.png" src="_images/download.png" style="width: 95%;" /></a>
-</figure>
-</td>
-</tr>
-<tr class="row-even"><td><ol class="arabic simple" start="2">
-<li><p>FlexConfirmMailSetup.exe を実行します。</p></li>
-</ol>
-</td>
-<td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/installer.png"><img alt="_images/installer.png" src="_images/installer.png" style="width: 95%;" /></a>
-</figure>
-</td>
-</tr>
-<tr class="row-odd"><td><ol class="arabic simple" start="3">
-<li><p>ウィザード完了後、Outlookの「ホーム」にFlexConfirmMailが追加されていれば成功です。</p></li>
+<li><p>OutlookのホームタブからFlexConfirmMailのアイコンをクリックします。</p></li>
 </ol>
 </td>
 <td><figure class="align-default">
@@ -429,11 +411,41 @@
 </figure>
 </td>
 </tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li><p>「To/CCに一定数以上のドメインが含まれている場合に警告する」にチェックを入れ、警告対象のしきい値を設定します。</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/SafeBcc.png"><img alt="_images/SafeBcc.png" src="_images/SafeBcc.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li><p>「設定を保存して終了」を押下すれば完了です。</p></li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li><p>送信時に次のような警告が表示されます。</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/SafeBccExample.png"><img alt="_images/SafeBccExample.png" src="_images/SafeBccExample.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
 </tbody>
 </table>
 </section>
-<section id="id5">
-<h3>インストール後の流れ<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">#</a></h3>
+<section id="id3">
+<h3>不審なドメインへの送信をチェックする<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">#</a></h3>
+<p>次のようなケースを想定した機能です。</p>
+<ul class="simple">
+<li><p>通常の業務ではフリーメールアドレスとは疎通しないので、送信時に注意を促したい。</p></li>
+<li><p>自社とよく似たドメインがあり、タイプミスが疑われる場合に警告を出したい。</p></li>
+</ul>
+<p>この場合は、次の手順で注意が必要なドメインを設定することができます。</p>
 <table class="table">
 <colgroup>
 <col style="width: 50.0%" />
@@ -441,73 +453,20 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple">
-<li><p>FlexConfirmMailは「送信」ボタンをクリックした際に有効になるアドインです。</p></li>
+<li><p>OutlookのホームタブからFlexConfirmMailのアイコンをクリックします。</p></li>
 </ol>
 </td>
 <td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/SendButton.png"><img alt="_images/SendButton.png" src="_images/SendButton.png" style="width: 95%;" /></a>
+<a class="reference internal image-reference" href="_images/Ribbon.png"><img alt="_images/Ribbon.png" src="_images/Ribbon.png" style="width: 95%;" /></a>
 </figure>
 </td>
 </tr>
 <tr class="row-even"><td><ol class="arabic simple" start="2">
-<li><p>メールの送信時に右図（クリックで拡大）のような確認ダイアログが表示されるようになります。</p></li>
+<li><p>「注意が必要なドメイン」を選択し、ドメインを記入します。</p></li>
 </ol>
 </td>
 <td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/MainDialog.png"><img alt="_images/MainDialog.png" src="_images/MainDialog.png" style="width: 95%;" /></a>
-</figure>
-</td>
-</tr>
-<tr class="row-odd"><td><ol class="arabic simple" start="3">
-<li><p>宛先と添付ファイルにすべてチェックを入れると、カウントダウン後に実際に送信されます。</p></li>
-</ol>
-</td>
-<td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/CountDialog.png"><img alt="_images/CountDialog.png" src="_images/CountDialog.png" style="width: 95%;" /></a>
-</figure>
-</td>
-</tr>
-<tr class="row-even"><td><ol class="arabic" start="4">
-<li><p>この一連の挙動はカスタマイズ可能です。</p>
-<p>次の「設定とカスタマイズ」で基本的なセットアップを解説します。</p>
-</li>
-</ol>
-</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="id6">
-<h2>設定とカスタマイズ<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">#</a></h2>
-<section id="id7">
-<h3>社内ドメインを設定する<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">#</a></h3>
-<table class="table">
-<colgroup>
-<col style="width: 50.0%" />
-<col style="width: 50.0%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><ol class="arabic">
-<li><p>FlexConfirmMailは宛先を社内・社外で分けて確認する機能を備えてます。</p>
-<p>この区別は「社内ドメイン」設定に基づきます。</p>
-</li>
-</ol>
-</td>
-<td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/TrustedDomainsExample.png"><img alt="_images/TrustedDomainsExample.png" src="_images/TrustedDomainsExample.png" style="width: 95%;" /></a>
-</figure>
-</td>
-</tr>
-<tr class="row-even"><td><ol class="arabic" start="2">
-<li><p>「FlexConfirmMail設定 &gt; 社内ドメイン」を選択し、自分の会社のドメインを記入します。</p>
-<p>例えば右の例では「clear-code.com」を社内ドメインとして登録しています。</p>
-</li>
-</ol>
-</td>
-<td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/TrustedDomains.png"><img alt="_images/TrustedDomains.png" src="_images/TrustedDomains.png" style="width: 95%;" /></a>
+<a class="reference internal image-reference" href="_images/UnsafeDomains.png"><img alt="_images/UnsafeDomains.png" src="_images/UnsafeDomains.png" style="width: 95%;" /></a>
 </figure>
 </td>
 </tr>
@@ -517,11 +476,22 @@
 </td>
 <td></td>
 </tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li><p>条件に該当した場合、次のような警告が表示されます。</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/UnsafeDomainsExample.png"><img alt="_images/UnsafeDomainsExample.png" src="_images/UnsafeDomainsExample.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
 </tbody>
 </table>
 </section>
-<section id="id8">
-<h3>注意が必要なファイル名を設定する<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">#</a></h3>
+<section id="id4">
+<h3>社内の宛先のみの場合は確認をスキップする<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">#</a></h3>
+<p>送信確認の手間を簡略化する機能です。
+宛先に外部ドメインが含まれない場合は、即座に送信を実行するように設定できます。</p>
 <table class="table">
 <colgroup>
 <col style="width: 50.0%" />
@@ -529,22 +499,20 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple">
-<li><p>FlexConfirmMailは、注意が必要な添付ファイルを検出して、警告を促す機能を備えています。</p></li>
+<li><p>OutlookのホームタブからFlexConfirmMailのアイコンをクリックします。</p></li>
 </ol>
 </td>
 <td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/UnsafeFilesExample.png"><img alt="_images/UnsafeFilesExample.png" src="_images/UnsafeFilesExample.png" style="width: 95%;" /></a>
+<a class="reference internal image-reference" href="_images/Ribbon.png"><img alt="_images/Ribbon.png" src="_images/Ribbon.png" style="width: 95%;" /></a>
 </figure>
 </td>
 </tr>
-<tr class="row-even"><td><ol class="arabic" start="2">
-<li><p>「FlexConfirmMail設定 &gt; 注意が必要なファイル名」を選択し、キーワードを設定します。</p>
-<p>例えば「社外秘」など、機密性の高いファイルによく付与するワードを設定ください。</p>
-</li>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li><p>基本設定の「宛先が社内ドメインのみの場合は確認をスキップする」にチェックを入れます。</p></li>
 </ol>
 </td>
 <td><figure class="align-default">
-<a class="reference internal image-reference" href="_images/UnsafeFiles.png"><img alt="_images/UnsafeFiles.png" src="_images/UnsafeFiles.png" style="width: 95%;" /></a>
+<a class="reference internal image-reference" href="_images/SkipIfNoExt.png"><img alt="_images/SkipIfNoExt.png" src="_images/SkipIfNoExt.png" style="width: 95%;" /></a>
 </figure>
 </td>
 </tr>
@@ -554,29 +522,133 @@
 </td>
 <td></td>
 </tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li><p>設定後の送信フローの例を右に示します。</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/SkipIfNoExtExample.png"><img alt="_images/SkipIfNoExtExample.png" src="_images/SkipIfNoExtExample.png" style="width: 400px;" /></a>
+</figure>
+</td>
+</tr>
 </tbody>
 </table>
 </section>
 </section>
-<section id="id9">
-<h2>記事のまとめ<a class="headerlink" href="#id9" title="この見出しへのパーマリンク">#</a></h2>
-<section id="id10">
-<h3>ここまでの手順で達成できたこと<a class="headerlink" href="#id10" title="この見出しへのパーマリンク">#</a></h3>
-<p>これで最初の導入手順は完了です。ここまでの手順で、次の3点が達成できました。</p>
-<ul class="simple">
-<li><p>誤送信対策アドインFlexConfirmMailをOutlookに導入することができました。</p></li>
-<li><p>基本的な設定が完了し、社内・外部の宛先ごとにチェックできるようになりました。</p></li>
-<li><p>注意が必要な添付ファイルを送信時に自動検出できるようになりました。</p></li>
-</ul>
-<p>既に基本的なセットアップは完了していますので、後は好みに応じて動作をカスタマイズください。</p>
-<p>具体的なカスタマイズの手順については、次の各リンク先にまとまっています。</p>
+<section id="id5">
+<h2>アドインを社内で展開する<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">#</a></h2>
+<section id="id6">
+<h3>インストーラをサイレント実行する<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">#</a></h3>
+<p>FlexConfirmMailを資産管理ソフトウェアで配布する場合、
+ダイアログを表示せずにインストール処理を実行する必要があります。</p>
+<p>この場合は次のように <code class="docutils literal notranslate"><span class="pre">/SILENT</span></code> オプションを付して実行ください。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">FlexConfirmMailSetup</span><span class="o">.</span><span class="n">exe</span> <span class="o">/</span><span class="n">SILENT</span>
+</pre></div>
+</div>
 </section>
+<section id="id7">
+<h3>アドインを多言語環境に展開する<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">#</a></h3>
+<p>FlexConfirmMailは日本語・英語・中国語の三カ国語に対応しています。</p>
+<p>標準のインストーラに、各言語版の翻訳リソースも同梱されています。
+Windowsの言語設定（設定 &gt; 言語 &gt; Windowsの表示言語）を検出して、
+自動的に表示言語が切り替わりますので、単純にインストールすれば問題ありません。</p>
+<figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="_images/ConfigDialogEnglish.png"><img alt="_images/ConfigDialogEnglish.png" src="_images/ConfigDialogEnglish.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">英語環境での表示例</span><a class="headerlink" href="#id12" title="この画像へのパーマリンク">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id8">
+<h3>アドインが自動的に無効化されるのを防ぐ<a class="headerlink" href="#id8" title="この見出しへのパーマリンク">#</a></h3>
+<p>Office 2013以降にはパフォーマンスを自動的に最適化する機能が組み込まれており、
+その一環としてアドインを自動的に無効化することがあります <a class="footnote-reference brackets" href="#f1" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p>FlexConfirmMailが自動的に無効化されるのを防止するには、
+グループポリシーで下記の設定を追加ください。</p>
+<ol class="arabic">
+<li><p>グループポリシーエディタを開き、「ユーザーの構成」を開く。</p></li>
+<li><p>「管理用テンプレート &gt; Microsoft Outlook 2016 &gt; その他」を順番に選択する。</p></li>
+<li><p>「管理対象アドインの一覧」の項目をダブルクリックする。</p></li>
+<li><p>設定を「有効」にした上で、オプション欄の「表示」ボタンをクリックする。</p></li>
+<li><p>値の名前に FlexConfirmMail と入力し、値を 1 に設定する。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/resiliency.png"><img alt="_images/resiliency.png" src="_images/resiliency.png" style="width: 60%;" /></a>
+</figure>
+</li>
+<li><p>「OK」ボタンを押下して確定する。</p></li>
+</ol>
+</section>
+</section>
+<section id="id10">
+<h2>エンタープライズ版<a class="headerlink" href="#id10" title="この見出しへのパーマリンク">#</a></h2>
 <section id="id11">
-<h3>ここからどこへ？<a class="headerlink" href="#id11" title="この見出しへのパーマリンク">#</a></h3>
+<h3>グループポリシーで既定値を管理する<a class="headerlink" href="#id11" title="この見出しへのパーマリンク">#</a></h3>
 <ul class="simple">
-<li><p>FlexConfirmMailのよくある設定と運用タスクは <a class="reference internal" href="howto.html"><span class="doc">HowToガイド</span></a> にまとまっています。</p></li>
-<li><p>リリースサイクルなどのプロジェクト全体に関する情報は <a class="reference internal" href="support.html"><span class="doc">開発情報</span></a> にまとまっています。</p></li>
+<li><p>有償で配布している <a class="reference internal" href="enterprise.html"><span class="doc">エンタープライズ版</span></a> は、集中管理機能を搭載しています。</p></li>
+<li><p>以下では「社内ドメイン」の設定を例に組織の既定値を設定する方法を解説します。</p></li>
 </ul>
+<table class="table">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li><p>契約時に共有されたURLからポリシーテンプレートを入手し、配置します。</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/PolicyADMX.png"><img alt="_images/PolicyADMX.png" src="_images/PolicyADMX.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li><p>グループポリシーエディタを起動して
+「コンピューターの構成 &gt; FlexConfirmMail &gt; 既定値」を選択します。</p></li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/PolicyDefault.png"><img alt="_images/PolicyDefault.png" src="_images/PolicyDefault.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic" start="3">
+<li><p>「社内ドメイン設定」を選択し、自社ドメインを登録します。</p>
+<p>「有効」を選択し、テキスト欄に一行に一件ずつ入力します。</p>
+</li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/PolicyTrustedDomains.png"><img alt="_images/PolicyTrustedDomains.png" src="_images/PolicyTrustedDomains.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li><p>「OK」ボタンを押下すれば完了です。</p></li>
+</ol>
+</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic" start="5">
+<li><p>ユーザーの設定画面では次のように表示されます。</p>
+<p>組織の推奨ポリシーに対して、個別の事情に応じた微調整が可能になります。</p>
+</li>
+</ol>
+</td>
+<td><figure class="align-default">
+<a class="reference internal image-reference" href="_images/PolicyUserConfig.png"><img alt="_images/PolicyUserConfig.png" src="_images/PolicyUserConfig.png" style="width: 95%;" /></a>
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">脚注</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">1</a><span class="fn-bracket">]</span></span>
+<p>詳しくはMicrosoft公式ドキュメント <a class="reference external" href="https://docs.microsoft.com/en-US/office/vba/outlook/Concepts/Getting-Started/support-for-keeping-add-ins-enabled">Support for keeping add-ins enabled</a> を参照ください。</p>
+</aside>
+</aside>
 </section>
 </section>
 </section>
@@ -600,52 +672,57 @@
 <nav id="bd-toc-nav" class="page-toc">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   インストール
+  <a class="reference internal nav-link" href="#id2">
+   よくある誤送信とその対策
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#flexconfirmmail">
-     FlexConfirmMailをインストールする
+    <a class="reference internal nav-link" href="#to-ccbcc">
+     To/Cc・Bccの使い分けのミスを検出する
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     インストール後の流れ
+    <a class="reference internal nav-link" href="#id3">
+     不審なドメインへの送信をチェックする
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     社内の宛先のみの場合は確認をスキップする
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id6">
-   設定とカスタマイズ
+  <a class="reference internal nav-link" href="#id5">
+   アドインを社内で展開する
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     インストーラをサイレント実行する
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id7">
-     社内ドメインを設定する
+     アドインを多言語環境に展開する
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id8">
-     注意が必要なファイル名を設定する
+     アドインが自動的に無効化されるのを防ぐ
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
-   記事のまとめ
+  <a class="reference internal nav-link" href="#id10">
+   エンタープライズ版
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-     ここまでの手順で達成できたこと
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id11">
-     ここからどこへ？
+     グループポリシーで既定値を管理する
     </a>
    </li>
   </ul>
@@ -664,7 +741,7 @@
   
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/FlexConfirmMail/flexconfirmmail.github.io/edit/main/source/quickstart.rst">
+    <a href="https://github.com/FlexConfirmMail/flexconfirmmail.github.io/edit/main/source/howto.rst">
         <i class="fa-solid fa-pencil"></i> Edit this page
     </a>
 </div>

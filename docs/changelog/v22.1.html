@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>FlexConfirmMail v22.0リリースノート &#8212; FlexConfirmMail</title>
+    <title>FlexConfirmMail v22.1リリースノート &#8212; FlexConfirmMail</title>
   
   
   
@@ -40,12 +40,12 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/translations.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'changelog/v22.0';</script>
-    <link rel="canonical" href="https://www.flexconfirmmail.com/changelog/v22.0.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'changelog/v22.1';</script>
+    <link rel="canonical" href="https://www.flexconfirmmail.com/changelog/v22.1.html" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="法人のお客様へ" href="../enterprise.html" />
-    <link rel="prev" title="FlexConfirmMail v22.1リリースノート" href="v22.1.html" />
+    <link rel="next" title="FlexConfirmMail v22.0リリースノート" href="v22.0.html" />
+    <link rel="prev" title="FlexConfirmMail v22.2リリースノート" href="v22.2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="ja">
   </head>
@@ -347,8 +347,8 @@
   <div class="bd-toc-item navbar-nav">
     <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="v22.2.html">FlexConfirmMail v22.2リリースノート</a></li>
-<li class="toctree-l1"><a class="reference internal" href="v22.1.html">FlexConfirmMail v22.1リリースノート</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">FlexConfirmMail v22.0リリースノート</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">FlexConfirmMail v22.1リリースノート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="v22.0.html">FlexConfirmMail v22.0リリースノート</a></li>
 </ul>
 
   </div>
@@ -380,16 +380,28 @@
             
             <article class="bd-article" role="main">
               
-  <section id="flexconfirmmail-v22-0">
-<h1>FlexConfirmMail v22.0リリースノート<a class="headerlink" href="#flexconfirmmail-v22-0" title="この見出しへのパーマリンク">#</a></h1>
-<p>FlexConfirmMail v22.0は2022年4月11日にリリースされたバージョンです。</p>
+  <section id="flexconfirmmail-v22-1">
+<h1>FlexConfirmMail v22.1リリースノート<a class="headerlink" href="#flexconfirmmail-v22-1" title="この見出しへのパーマリンク">#</a></h1>
+<p>FlexConfirmMail v22.1は2022年7月9日にリリースされたバージョンです。</p>
 <nav class="contents local" id="id1">
 <ul class="simple">
 <li><p><a class="reference internal" href="#id2" id="id8">新機能</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id3" id="id9">1. 新しい設定画面を導入しました</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id10">2. 多言語サポートを追加しました</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id11">3. 設定「宛先が社内のみの場合は確認をスキップする」を追加しました</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id9">1. 社内の宛先に「一括チェック」ボタンを追加しました</a></p></li>
+<li><p><a class="reference internal" href="#legacyexchangedn" id="id10">2. LegacyExchangeDNアドレスに対応しました</a></p></li>
+<li><p><a class="reference internal" href="#gpo" id="id11">3. GPOで既定値を管理できるようになりました（エンタープライズ版）</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id4" id="id12">バグ修正</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id13">1. アンダースコアの表示を改善しました</a></p></li>
+<li><p><a class="reference internal" href="#intel-gpu" id="id14">2. Intel GPUのドライバ不具合に対応しました</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id15">その他</a></p>
+<ul>
+<li><p><a class="reference internal" href="#flexconfirmmail" id="id16">1. FlexConfirmMailのアイコン位置が右端になりました</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id17">2. インストーラにデジタル署名を追加しました</a></p></li>
 </ul>
 </li>
 </ul>
@@ -397,52 +409,72 @@
 <section id="id2">
 <h2>新機能<a class="headerlink" href="#id2" title="この見出しへのパーマリンク">#</a></h2>
 <section id="id3">
-<h3>1. 新しい設定画面を導入しました<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">#</a></h3>
-<p>このバージョンから、FlexConfirmMailに新しい設定画面が付属しています。
-FlexConfirmMailのすべての設定はこの画面から変更できます。</p>
-<p>新しい設定画面にはOutlookの「ホーム」タブからアクセスできます。</p>
+<h3>1. 社内の宛先に「一括チェック」ボタンを追加しました<a class="headerlink" href="#id3" title="この見出しへのパーマリンク">#</a></h3>
+<p>メール送信時の確認画面に「一括チェック」ボタンを追加しました。
+このボタンをクリックすることで、社内の宛先を一括で選択状態にできます（下図）</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/Ribbon.png"><img alt="../_images/Ribbon.png" src="../_images/Ribbon.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/CheckAll.gif"><img alt="../_images/CheckAll.gif" src="../_images/CheckAll.gif" style="width: 400px;" /></a>
 </figure>
-<p>FlexConfirmMailのアイコンをクリックすると、次のような画面が表示されます。</p>
+</section>
+<section id="legacyexchangedn">
+<h3>2. LegacyExchangeDNアドレスに対応しました<a class="headerlink" href="#legacyexchangedn" title="この見出しへのパーマリンク">#</a></h3>
+<p>LegacyExchangeDNとは、Exchangeが定める独自形式のアドレスで、
+Active Directory組織のメンバーを一意に識別するアドレスです。</p>
+<p>Exchangeは、組織内の宛先については、通常のSMTPのメールアドレス <code class="docutils literal notranslate"><span class="pre">(foo&#64;example.com)</span></code> ではなく、
+このアドレスを利用して送受信を行います:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">o</span><span class="o">=</span><span class="n">FlexConfirmMail</span><span class="o">/</span><span class="n">ou</span><span class="o">=</span><span class="n">Exchange</span><span class="o">/</span><span class="n">cn</span><span class="o">=</span><span class="n">Recipients</span><span class="o">/</span><span class="n">cn</span><span class="o">=</span><span class="n">n000000</span><span class="o">-</span><span class="n">fujimoto</span>
+</pre></div>
+</div>
+<p>これまでのリリースでは、LegacyExchangeDNアドレスの宛先については、
+「Exchange」という独立の表題にまとめて表示していました。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/ConfigDialog.png"><img alt="../_images/ConfigDialog.png" src="../_images/ConfigDialog.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/LegacyDN.png"><img alt="../_images/LegacyDN.png" src="../_images/LegacyDN.png" style="width: 450px;" /></a>
 </figure>
-<p>詳しい利用方法は <a class="reference internal" href="../quickstart.html"><span class="doc">クイックスタート</span></a> を参照ください。</p>
+<p>今回のリリースから、LegacyExchangeDNのアドレスは、
+対応するSMTPのメールアドレスを解決して表示するようになりました。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/LegacyDNResolved.png"><img alt="../_images/LegacyDNResolved.png" src="../_images/LegacyDNResolved.png" style="width: 450px;" /></a>
+</figure>
+</section>
+<section id="gpo">
+<h3>3. GPOで既定値を管理できるようになりました（エンタープライズ版）<a class="headerlink" href="#gpo" title="この見出しへのパーマリンク">#</a></h3>
+<p>エンタープライズ版について、グループポリシーで各設定の既定値を
+制御できるようになりました。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/PolicyDefault.png"><img alt="../_images/PolicyDefault.png" src="../_images/PolicyDefault.png" style="width: 500px;" /></a>
+</figure>
+</section>
 </section>
 <section id="id4">
-<h3>2. 多言語サポートを追加しました<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">#</a></h3>
-<p>従来は日本語のみサポートしていましたが、英語と中国語を正式にサポートしました。</p>
-<table class="table">
-<tbody>
-<tr class="row-odd"><td><figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/ConfigDialogEnglish.png"><img alt="../_images/ConfigDialogEnglish.png" src="../_images/ConfigDialogEnglish.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-text">英語版</span><a class="headerlink" href="#id6" title="この画像へのパーマリンク">#</a></p>
-</figcaption>
-</figure>
-</td>
-<td><figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/ConfigDialogChinese.png"><img alt="../_images/ConfigDialogChinese.png" src="../_images/ConfigDialogChinese.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-text">中国語版</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">#</a></p>
-</figcaption>
-</figure>
-</td>
-</tr>
-</tbody>
-</table>
-<p>単一のインストーラですべての言語に対応しています。
-Windowsの言語設定（設定 &gt; 言語 &gt; Windowsの表示言語）を検出して、
-自動的に表示言語が切り替わる仕組みです。</p>
-</section>
+<h2>バグ修正<a class="headerlink" href="#id4" title="この見出しへのパーマリンク">#</a></h2>
 <section id="id5">
-<h3>3. 設定「宛先が社内のみの場合は確認をスキップする」を追加しました<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">#</a></h3>
-<p>社外の宛先が含まれないメールについては、確認画面をスキップして送信できるようになりました。</p>
+<h3>1. アンダースコアの表示を改善しました<a class="headerlink" href="#id5" title="この見出しへのパーマリンク">#</a></h3>
+<p>メールアドレスや添付ファイル名にアンダースコア文字が含まれる場合に、
+表示が崩れる問題を修正しました。</p>
+</section>
+<section id="intel-gpu">
+<h3>2. Intel GPUのドライバ不具合に対応しました<a class="headerlink" href="#intel-gpu" title="この見出しへのパーマリンク">#</a></h3>
+<p>Windows 10 + Intel GPUドライバの組み合わせで、FlexConfirmMailの画面が白紙になる問題を解消しました。</p>
+</section>
+</section>
+<section id="id6">
+<h2>その他<a class="headerlink" href="#id6" title="この見出しへのパーマリンク">#</a></h2>
+<section id="flexconfirmmail">
+<h3>1. FlexConfirmMailのアイコン位置が右端になりました<a class="headerlink" href="#flexconfirmmail" title="この見出しへのパーマリンク">#</a></h3>
+<p>従来、FlexConfirmMailの「ホーム」タブのアイコンは「返信」グループの右隣に表示されていましたが、
+本バージョンからタブの末尾に表示されるようになりました。</p>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/SkipIfNoExt.png"><img alt="../_images/SkipIfNoExt.png" src="../_images/SkipIfNoExt.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/HomeTab.png"><img alt="../_images/HomeTab.png" src="../_images/HomeTab.png" style="width: 500px;" /></a>
 </figure>
-<p>機能を有効化するには、設定画面から「基本設定 &gt; 宛先が社内ドメインのみの場合は確認をスキップする」にチェックを入れて下さい。</p>
+</section>
+<section id="id7">
+<h3>2. インストーラにデジタル署名を追加しました<a class="headerlink" href="#id7" title="この見出しへのパーマリンク">#</a></h3>
+<p>これまではエンタープライズ版のインストーラについてのみ、
+開発元のクリアコードの署名を付していました。</p>
+<p>今回のリリースから、公開版のインストーラについてもデジタル署名を付与して配布しています。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/DigitalSignature.png"><img alt="../_images/DigitalSignature.png" src="../_images/DigitalSignature.png" style="width: 400px;" /></a>
+</figure>
 </section>
 </section>
 </section>
@@ -472,17 +504,51 @@ Windowsの言語設定（設定 &gt; 言語 &gt; Windowsの表示言語）を検
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id3">
-     1. 新しい設定画面を導入しました
+     1. 社内の宛先に「一括チェック」ボタンを追加しました
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     2. 多言語サポートを追加しました
+    <a class="reference internal nav-link" href="#legacyexchangedn">
+     2. LegacyExchangeDNアドレスに対応しました
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gpo">
+     3. GPOで既定値を管理できるようになりました（エンタープライズ版）
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   バグ修正
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id5">
-     3. 設定「宛先が社内のみの場合は確認をスキップする」を追加しました
+     1. アンダースコアの表示を改善しました
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intel-gpu">
+     2. Intel GPUのドライバ不具合に対応しました
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   その他
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flexconfirmmail">
+     1. FlexConfirmMailのアイコン位置が右端になりました
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     2. インストーラにデジタル署名を追加しました
     </a>
    </li>
   </ul>
@@ -501,7 +567,7 @@ Windowsの言語設定（設定 &gt; 言語 &gt; Windowsの表示言語）を検
   
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/FlexConfirmMail/flexconfirmmail.github.io/edit/main/source/changelog/v22.0.rst">
+    <a href="https://github.com/FlexConfirmMail/flexconfirmmail.github.io/edit/main/source/changelog/v22.1.rst">
         <i class="fa-solid fa-pencil"></i> Edit this page
     </a>
 </div>
