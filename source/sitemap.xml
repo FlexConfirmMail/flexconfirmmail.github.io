@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<url>
+  <loc>https://www.flexconfirmmail.com/</loc>
+  <priority>1.0</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/quickstart.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/howto.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/download.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/support.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/enterprise.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/index.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/thankyou.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+<url>
+  <loc>https://www.flexconfirmmail.com/_images/release.svg</loc>
+  <priority>0.7</priority>
+  <lastmod>2022-12-03T18:11:15+09:00</lastmod>
+</url>
+
+</urlset>

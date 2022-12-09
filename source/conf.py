@@ -59,6 +59,10 @@ html_css_files = ['custom.css']
 html_show_copyright = False
 html_show_sphinx = False
 html_copy_source = False
+html_extra_path = [
+    'sitemap.xml',
+    'googlecd24172c95f0d5b3.html'
+]
 
 html_theme_options = {
     "icon_links": [
