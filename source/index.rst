@@ -13,6 +13,7 @@ Microsoft Outlookのアドインとして導入することで、
 更新情報
 ========
 
+* 2023-03-15 :any:`support` :any:`FlexConfirmMail v22.2 <changelog/v22.2>` を更新しました。
 * 2022-12-02 :any:`FlexConfirmMail v22.2 <changelog/v22.2>` をリリースしました。
 * 2022-07-09 :any:`FlexConfirmMail v22.1 <changelog/v22.1>` をリリースしました。
 * 2022-06-26 :any:`support` を更新しました。
