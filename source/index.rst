@@ -8,12 +8,15 @@ FlexConfirmMailプロジェクト
 Microsoft Outlookのアドインとして導入することで、
 今日から誤送信対策を始めることができます。
 
+このページは、Outlook向けの情報です。
+Thunderbird向けの情報は `FlexConfirmMail :: Thunderbird向けアドオン <https://addons.thunderbird.net/ja/thunderbird/addon/flex-confirm-mail/>`_ を参照してください。
+
 .. image:: _static/top.png
 
 更新情報
 ========
 
-* 2023-03-15 :any:`support` :any:`FlexConfirmMail v22.2 <changelog/v22.2>` を更新しました。
+* 2023-03-15 :any:`support` 、 :any:`FlexConfirmMail v22.2 <changelog/v22.2>` を更新しました。
 * 2022-12-02 :any:`FlexConfirmMail v22.2 <changelog/v22.2>` をリリースしました。
 * 2022-07-09 :any:`FlexConfirmMail v22.1 <changelog/v22.1>` をリリースしました。
 * 2022-06-26 :any:`support` を更新しました。
