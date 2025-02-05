@@ -61,7 +61,8 @@ html_show_sphinx = False
 html_copy_source = False
 html_extra_path = [
     'sitemap.xml',
-    'googlecd24172c95f0d5b3.html'
+    'googlecd24172c95f0d5b3.html',
+    'ms72214890.txt'
 ]
 
 html_theme_options = {
