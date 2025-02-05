@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Web サイトのルートにある Microsoft 365 のドメイン所有権確認ファイル",
+  "Domain": "flexconfirmmail.com",
+  "Id": "a9abc63e-5008-41b2-a638-b57a28cf54e4"
+}
