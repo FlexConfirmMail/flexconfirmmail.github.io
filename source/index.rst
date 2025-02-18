@@ -2,7 +2,7 @@
 FlexConfirmMailプロジェクト
 ===========================
 
-**FlexConfirmMailは、フリーソフトウェアの誤送信対策ソリューションです。**
+**FlexConfirmMailは、誤送信対策ソリューションです。**
 企業のメール運用において大きな課題となる送信ミスの問題を解決します。
 
 Microsoft Outlookのアドインとして導入することで、
@@ -16,12 +16,7 @@ Thunderbird向けの情報は `FlexConfirmMail :: Thunderbird向けアドオン 
 更新情報
 ========
 
-* 2023-03-15 :any:`support` 、 :any:`FlexConfirmMail v22.2 <changelog/v22.2>` を更新しました。
-* 2022-12-02 :any:`FlexConfirmMail v22.2 <changelog/v22.2>` をリリースしました。
-* 2022-07-09 :any:`FlexConfirmMail v22.1 <changelog/v22.1>` をリリースしました。
-* 2022-06-26 :any:`support` を更新しました。
-* 2022-06-12 :any:`quickstart` を解説を更新し、スクリーンショットを追加しました。
-* 2022-04-11 :any:`FlexConfirmMail v22.0 <changelog/v22.0>` をリリースしました。
+* 2025-02-28 :any:`top`を更新しました
 
 コンテンツリンク
 ================
@@ -37,25 +32,8 @@ Thunderbird向けの情報は `FlexConfirmMail :: Thunderbird向けアドオン 
 
        FlexConfirmMailのよくある使い方をまとめた運用マニュアル集です。
 
-   * - :any:`download`
-
-       最新版のインストーラはこちらからダウンロードできます
-
-     - :any:`support`
-
-       FlexConfirmMailのリリース情報はこちらを参照ください
-
-   * - :any:`enterprise`
-
-       組織導入に最適化されたエンタープライズ版のご案内です
-
-     -
-
 .. toctree::
    :hidden:
 
    quickstart.rst
    howto.rst
-   download.rst
-   support.rst
-   enterprise.rst
