@@ -2,7 +2,7 @@
 クイックスタート
 ================
 
-このページでは、FlexConfirmMailをOutlookに導入する手順を解説します。
+このページでは、FlexConfirmMailをOutlookに導入した後の手順を解説します。
 
 .. contents::
    :local:
@@ -13,27 +13,6 @@
 
 * 初期セットアップの流れを解説した動画 「`2分で始める誤送信対策 <https://www.youtube.com/watch?v=cBfAGb6Ub20>`_」も用意しています。
 * 動画の方が分かりやすいという方は上のリンクからご覧ください。
-
-FlexConfirmMailをインストールする
----------------------------------
-
-.. list-table::
-   :widths: 10 10
-
-   * - 1. FlexConfirmMailの最新のEXEインストーラを :any:`download` から取得します。
-
-     - .. figure:: _static/download.png
-          :width: 95%
-
-   * - 2. FlexConfirmMailSetup.exe を実行します。
-
-     - .. figure:: _static/installer.png
-          :width: 95%
- 
-   * - 3. ウィザード完了後、Outlookの「ホーム」にFlexConfirmMailが追加されていれば成功です。
-
-     - .. figure:: _static/Ribbon.png
-          :width: 95%
 
 インストール後の流れ
 --------------------
