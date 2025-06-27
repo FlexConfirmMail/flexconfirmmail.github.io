@@ -37,12 +37,11 @@ FlexConfirmMailの機能
 動作環境
 ==================
 
-.. list-table:: 論理和の結果
-       :widths: 10, 20
+.. list-table::
+   :widths: 10, 20
 
    * - 対応メールクライアント     
      - **"Microsoft 365 Outlook(Outlook on the web)"** 
-
        **"Microsoft Outlook for Windows(デスクトップアプリ)"**        
         * 新しいOutlook       
         * クラシックOutlook(バージョン2024以降）                      
