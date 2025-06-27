@@ -83,5 +83,5 @@ FlexConfirmMailの開発元であるクリアコードが提供する、法人�
 ==================
 FlexConfirmMailの製品紹介、デモ、導入に関するご相談、御見積をご希望の場合は、お問い合わせ窓口までお気軽にご連絡ください。評価版の貸出も行っております。
 
-Webフォーム：https://www.clear-code.com/contact/
-メール：info@clear-code.com
+* Webフォーム： https://www.clear-code.com/contact/
+* メール： info@clear-code.com
