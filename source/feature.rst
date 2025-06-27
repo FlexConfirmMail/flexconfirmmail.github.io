@@ -38,10 +38,13 @@ FlexConfirmMailの機能
    :widths: 10, 20
 
    * - 対応メールクライアント     
-     - **Microsoft 365 Outlook（Outlook on the web）**
-       **Microsoft Outlook for Windows（デスクトップアプリ）"**
-        * 新しいOutlook       
-        * クラシックOutlook（バージョン2024以降）                      
+     - * Microsoft 365 Outlook（Outlook on the web）
+          * Google Chrome
+          * Mozilla Firefox
+          * Microsoft Edge
+       * Microsoft Outlook for Windows（デスクトップアプリ）
+          * 新しいOutlook       
+          * クラシックOutlook（バージョン2024以降）                      
    * - 対応OS
      - Microsoft Windows10, 11
    * - 設定集中管理
