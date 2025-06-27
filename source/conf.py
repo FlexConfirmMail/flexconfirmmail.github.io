@@ -65,6 +65,11 @@ html_extra_path = [
     'ms72214890.txt'
 ]
 
+html_sidebars = {
+    'feature': [],
+    'service': [],
+}
+
 html_theme_options = {
     "icon_links": [
         {
