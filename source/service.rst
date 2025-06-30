@@ -2,7 +2,7 @@
 FlexConfirmMailサブスクリプションサービス
 ==========================================
 
-FlexConfirmMail for Outlookをご利用を希望される法人向けのサブスクリプションサービスを紹介します。
+FlexConfirmMail for Outlookのご利用を希望される法人向けのサブスクリプションサービスを紹介します。
 
 .. contents::
    :local:
