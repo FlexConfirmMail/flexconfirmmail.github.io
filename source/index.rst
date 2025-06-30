@@ -1,22 +1,24 @@
 ===========================
-FlexConfirmMailプロジェクト
+FlexConfirmMail for Outlook
 ===========================
 
-**FlexConfirmMailは、誤送信対策ソリューションです。**
-企業のメール運用において大きな課題となる送信ミスの問題を解決します。
+**FlexConfirmMail for Outlookは、メール誤送信対策ソリューションです。**
+企業における誤送信の事例をもとに、送信前のチェック機能を強化し、誤送信防止策を進化させてきました。
+メール運用において大きな課題となる送信ミスの問題の解決に近づけます。
 
-Microsoft Outlookのアドインとして導入することで、
-今日から誤送信対策を始めることができます。
 
 このページは、Outlook向けの情報です。
-Thunderbird向けの情報は `FlexConfirmMail :: Thunderbird向けアドオン <https://addons.thunderbird.net/ja/thunderbird/addon/flex-confirm-mail/>`_ を参照してください。
+2014年から提供されているThunderbird向けの情報は `FlexConfirmMail :: Thunderbird向けアドオン <https://addons.thunderbird.net/ja/thunderbird/addon/flex-confirm-mail/>`_ を参照してください。
 
 .. image:: _static/top.png
 
-更新情報
-========
+紹介動画
+--------
 
-* 2025-02-28 :any:`top`を更新しました
+.. raw:: html
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ctyd4hBshiU?si=9iPuDWeVOp90mwiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 コンテンツリンク
 ================
@@ -24,16 +26,18 @@ Thunderbird向けの情報は `FlexConfirmMail :: Thunderbird向けアドオン 
 .. list-table::
    :class: table-of-contents
 
-   * - :any:`quickstart`
+   * - :any:`service`
 
-       FlexConfirmMailの導入方法と基本的な使い方を説明します
+       法人向けのFlexConfirmMail for Outlookサブスクリプションサービスを紹介しています。
+       
 
-     - :any:`howto`
+     - :any:`feature`
 
-       FlexConfirmMailのよくある使い方をまとめた運用マニュアル集です。
+       FlexConfirmMail for Outlookの機能概要をまとめました
 
 .. toctree::
    :hidden:
 
-   quickstart.rst
-   howto.rst
+   feature.rst
+   service.rst
+
