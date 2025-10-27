@@ -22,7 +22,7 @@ FlexConfirmMail for Outlook
 トピックス
 ==========
 
-2025-09-29 FlexConfirmMail for Outlook v1.1.0.0をリリース
+2025-09-29 `FlexConfirmMail for Outlook v1.1.0.0をリリース <archives/topics-20250929.html>`_
 
 .. dropdown:: 詳細を見る
 
