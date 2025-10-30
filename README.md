@@ -17,3 +17,13 @@ URL: https://www.flexconfirmmail.com
    ```
 
 3. The website should be available in `build/html`.
+
+4. To check if absolute paths work, start http.server at `build/html`.
+
+   ```
+   $ python3 -m http.server 8000
+   ```
+
+   Then open `http://localhost:8000` on your browser.
+
+   Change the port number if needed.
