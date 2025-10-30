@@ -31,6 +31,7 @@
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a3da925f" />
   
   <!-- So that users can add custom icons -->
@@ -43,6 +44,7 @@
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/translations.js?v=4755f45a"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="canonical" href="https://www.flexconfirmmail.com/index.html" />
     <link rel="index" title="索引" href="genindex.html" />
@@ -371,7 +373,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="id1">
 <h2>紹介動画<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ctyd4hBshiU?si=9iPuDWeVOp90mwiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><section id="id2">
-<h3>コンテンツリンク<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<h3>トピックス<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>2025-09-29 <a class="reference external" href="/archives/topics-20250929.html">FlexConfirmMail for Outlook v1.1.0.0をリリース</a></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">詳細を見る</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>FlexConfirmMail v1.1.0.0をリリースしました。</strong></p>
+<p class="sd-card-text">本文と件名の追加機能を追加しました。</p>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="_images/saikeikoku-honbuntokenmeinokakunin.mp4"><video controls="controls" src="_images/saikeikoku-honbuntokenmeinokakunin.mp4" style="width: 864px; height: 462px;" title="「本文と件名の追加機能」デモ動画">
+<a href="_images/saikeikoku-honbuntokenmeinokakunin.mp4">「本文と件名の追加機能」デモ動画</a>
+</video>
+</a>
+</figure>
+<p class="sd-card-text">さらに、特に注意が必要な文言やアドレス等が含まれる場合に、再警告表示や送信禁止が可能となりました。</p>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="_images/soushin-block.mp4"><video controls="controls" src="_images/soushin-block.mp4" style="width: 864px; height: 463px;" title="「送信ブロック」デモ動画">
+<a href="_images/soushin-block.mp4">「送信ブロック」デモ動画</a>
+</video>
+</a>
+</figure>
+<p class="sd-card-text">また、To/CCが一定数以上の場合にBCCに変換する機能を追加しました。</p>
+<figure class="align-default">
+<a class="controls reference internal image-reference" href="_images/bcc-henkan.mp4"><video controls="controls" src="_images/bcc-henkan.mp4" style="width: 864px; height: 463px;" title="「BCC変換」デモ動画">
+<a href="_images/bcc-henkan.mp4">「BCC変換」デモ動画</a>
+</video>
+</a>
+</figure>
+<p class="sd-card-text">機能改善、バグ修正の一覧は以下のとおりです。</p>
+<p class="sd-card-text"><strong>機能改善</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">注意が必要な語句が本文に含まれる場合の動作を制御可能にしました。</p>
+<ul>
+<li><p class="sd-card-text">警告、再警告、送信禁止を指定可能です。</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">To/CCが一定数以上の場合にBCCに変換する機能を追加しました。</p></li>
+<li><p class="sd-card-text">件名の確認機能を追加しました。</p></li>
+<li><p class="sd-card-text">本文の確認機能を追加しました。</p></li>
+<li><p class="sd-card-text">注意が必要なドメイン・アドレスが宛先に含まれる場合の制御機能を強化しました。</p>
+<ul>
+<li><p class="sd-card-text">再警告機能を追加しました。</p></li>
+<li><p class="sd-card-text">送信禁止機能を追加しました。</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">注意が必要な語句が添付ファイルの名前に含まれる場合の制御機能を強化しました。</p>
+<ul>
+<li><p class="sd-card-text">再警告機能を追加しました。</p></li>
+<li><p class="sd-card-text">送信禁止機能を追加しました。</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">To/CCに一定数以上のドメインが含まれている場合の制御機能を強化しました。</p>
+<ul>
+<li><p class="sd-card-text">再警告機能を追加しました。</p></li>
+</ul>
+</li>
+<li><p class="sd-card-text">Webブラウザ（Edge、Firefox、Chrome）でのポップアップの例外指定が不要になりました。</p></li>
+</ul>
+<p class="sd-card-text"><strong>バグ修正</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">Outlook on the web, 新しいOutlook:</p>
+<ul>
+<li><p class="sd-card-text">「新しいウィンドウで開く」から新しいウィンドウを開いてメールを送信する場合に、送信確認画面が表示されず、メールが送信できない問題を修正しました。</p></li>
+<li><p class="sd-card-text">送信確認画面および設定画面のダイアログのスタイルを変更しました。</p>
+<ul>
+<li><p class="sd-card-text">従来はダイアログのリサイズや移動が可能でしたが、本バージョンからOutlookのウィンドウの中央に固定で表示されます。</p></li>
+<li><p class="sd-card-text">前述の、新しいウィンドウを開いてメールを送信する場合に送信確認画面が表示されない問題へ対応するための変更です。</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details></section>
+<section id="id3">
+<h3>コンテンツリンク<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table-of-contents table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="service.html"><span class="doc">FlexConfirmMailサブスクリプションサービス</span></a></p>
@@ -414,7 +490,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">紹介動画</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">コンテンツリンク</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">トピックス</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コンテンツリンク</a></li>
 </ul>
 </li>
 </ul>
