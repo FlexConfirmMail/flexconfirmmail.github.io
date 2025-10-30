@@ -19,6 +19,28 @@ FlexConfirmMail for Outlook
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ctyd4hBshiU?si=9iPuDWeVOp90mwiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+トピックス
+==========
+
+2025-09-29 `FlexConfirmMail for Outlook v1.1.0.0をリリース </archives/topics-20250929.html>`_
+
+.. dropdown:: 詳細を見る
+
+  .. このdropdownの中は、毎回トピックス更新時に最新の内容に入れ替える 
+
+  **FlexConfirmMail v1.1.0.0をリリースしました。**
+
+  .. include:: /archives/topics-20250929-parts1.rst
+
+  **機能改善**
+
+  .. include:: /archives/topics-20250929-parts2.rst
+
+  **バグ修正**
+
+  .. include:: /archives/topics-20250929-parts3.rst
+
+  .. 最新の内容に入れ替える範囲、ここまで
 
 コンテンツリンク
 ================
@@ -40,4 +62,3 @@ FlexConfirmMail for Outlook
 
    feature.rst
    service.rst
-
