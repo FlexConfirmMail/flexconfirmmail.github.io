@@ -26,6 +26,8 @@ FlexConfirmMail for Outlook
 
 .. dropdown:: 詳細を見る
 
+  .. このdropdownの中は、毎回トピックス更新時に最新の内容に入れ替える 
+
   **FlexConfirmMail v1.1.0.0をリリースしました。**
 
   .. include:: /archives/topics-20250929-parts1.rst
@@ -37,6 +39,8 @@ FlexConfirmMail for Outlook
   **バグ修正**
 
   .. include:: /archives/topics-20250929-parts3.rst
+
+  .. 最新の内容に入れ替える範囲、ここまで
 
 コンテンツリンク
 ================
