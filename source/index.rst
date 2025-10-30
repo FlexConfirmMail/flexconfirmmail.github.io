@@ -58,4 +58,3 @@ FlexConfirmMail for Outlook
 
    feature.rst
    service.rst
-
