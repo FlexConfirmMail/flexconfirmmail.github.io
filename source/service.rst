@@ -11,7 +11,7 @@ FlexConfirmMail for Outlookのご利用を希望される法人向けのサブ�
 サービス概要
 ============
 
-FlexConfirmMailの開発元であるクリアコードが提供する、法人向けサポートサービスです。
+FlexConfirmMailの開発元である[クリアコード](https://www.clear-code.com/) が提供する、法人向けサポートサービスです。
 
 署名済みのFlexConfirmMail for Outlookインストーラー（プログラム一式）、ドキュメントとテクニカルサポートを提供いたします。
 
