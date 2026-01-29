@@ -59,3 +59,8 @@ FlexConfirmMail for Outlookは、メール送信時に起動します。確認�
      - メールサーバーは以下のいずれかであること
         * Microsoft 365
         * Exchange Online
+
+Mozilla Thunderbird向けの誤送信防止アドオンFlexConfirmMailは、Thunderbird Add-onサイトからダウンロードして利用可能です。
+
+*企業利用向け安定板　FlexConfirmMail Stable* 　https://services.addons.thunderbird.net/ja/thunderbird/addon/flex-confirm-mail-stable/
+*一般向け最新版FlexConfirmMail* https://addons.thunderbird.net/ja/thunderbird/addon/flex-confirm-mail/
