@@ -22,8 +22,8 @@ FlexConfirmMail for Outlook
 トピックス
 ==========
 
-2026-05-15 `FlexConfirmMail for Outlook v2.0.0.0をリリース </archives/topics-20260515.html>`_
-2025-09-29 `FlexConfirmMail for Outlook v1.1.0.0をリリース </archives/topics-20250929.html>`_
+* 2026-05-15 `FlexConfirmMail for Outlook v2.0.0.0をリリース </archives/topics-20260515.html>`_
+* 2025-09-29 `FlexConfirmMail for Outlook v1.1.0.0をリリース </archives/topics-20250929.html>`_
 
 .. dropdown:: 詳細を見る
 
@@ -31,13 +31,15 @@ FlexConfirmMail for Outlook
 
   **FlexConfirmMail for Outlook v2.0.0.0をリリースしました。**
 
+  .. include:: /archives/topics-20260515-parts1.rst
+
   **機能改善**
 
-  .. include:: /archives/topics-20260515-parts1.rst
+  .. include:: /archives/topics-20260515-parts2.rst
 
   **バグ修正**
 
-  .. include:: /archives/topics-20260515-parts2.rst
+  .. include:: /archives/topics-20260515-parts3.rst
 
   .. 最新の内容に入れ替える範囲、ここまで
 
