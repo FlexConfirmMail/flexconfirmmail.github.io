@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a3da925f" />
   
   <!-- So that users can add custom icons -->
-  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="_static/documentation_options.js?v=4eb6406d"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
@@ -46,6 +46,7 @@
     <script src="_static/translations.js?v=4755f45a"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'feature';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://www.flexconfirmmail.com/feature.html" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -55,6 +56,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EP88Q2KZ1"></script>
 <script>
@@ -73,13 +80,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">本文へスキップ</a></div>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXD8Q6J"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -90,7 +95,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>トップに戻る</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -116,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
   <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="サイトナビゲーション">
     <span class="fa-solid fa-bars"></span>
@@ -413,11 +420,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </figure>
 </td>
 </tr>
-<tr class="row-even"><td><p>添付ファイルチェック</p></td>
+<tr class="row-even"><td><p>BCCへの変換</p></td>
+<td><p>To、Ccが一定数以上の場合に、BCCへの変換を促すことができます。宛先の数の閾値は設定可能です。</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>添付ファイルチェック</p></td>
 <td><p>送信前の添付ファイルについて、特定の拡張子や文字列を含むファイルに対しての警告表示が可能です。</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>件名、本文チェック</p></td>
+<tr class="row-even"><td><p>件名、本文チェック</p></td>
 <td><div class="line-block">
 <div class="line">送信前に件名と本文の確認が可能です。</div>
 <div class="line">特定の文字列を含む本文に対しての警告表示が可能です。</div>
@@ -425,7 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>メール送信前カウントダウン</p></td>
+<tr class="row-odd"><td><p>メール送信前カウントダウン</p></td>
 <td><p>送信ボタンを押してからあらかじめ設定した時間カウントダウン画面を表示し、カウントダウン後に実際に送信されます。</p></td>
 <td><figure class="align-default">
 <a class="reference internal image-reference" href="_images/CountDialog.png"><img alt="_images/CountDialog.png" src="_images/CountDialog.png" style="width: 95%;" />
@@ -433,7 +444,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </figure>
 </td>
 </tr>
-<tr class="row-odd"><td><p>会議通知連携</p></td>
+<tr class="row-even"><td><p>会議通知連携</p></td>
 <td><p>会議の招待状を送信する際の宛先確認も可能です。</p></td>
 <td></td>
 </tr>
@@ -520,8 +531,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> このページでは
   </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">機能紹介</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">動作環境</a></li>
 </ul>
@@ -556,8 +567,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
 
   <footer class="bd-footer">
@@ -570,7 +581,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1 で構築されています。
+  <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.1 で構築されています。
 </p></div>
       
     </div>
