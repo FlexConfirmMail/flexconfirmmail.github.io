@@ -4,14 +4,14 @@
 FlexConfirmMail v2.0.0.0をリリースしました。
 ============================================
 
-.. include:: /archives/topics-20260515-parts1.rst
+.. include:: /archives/topics-20260409-parts1.rst
 
 機能改善
 ========
 
-.. include:: /archives/topics-20260515-parts2.rst
+.. include:: /archives/topics-20260409-parts2.rst
 
 バグ修正
 ========
 
-.. include:: /archives/topics-20260515-parts3.rst
+.. include:: /archives/topics-20260409-parts3.rst
