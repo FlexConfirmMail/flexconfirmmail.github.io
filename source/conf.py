@@ -90,6 +90,7 @@ html_theme_options = {
    "use_edit_page_button": True,
    "navigation_with_keys": False,
    "show_prev_next": False,
+   "footer_start": ["footer-links"],
 }
 
 
