@@ -28,6 +28,7 @@ author = 'ClearCode Inc.'
 # ones.
 extensions = [
   "sphinx.ext.githubpages",
+  "sphinx_design",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -64,6 +65,11 @@ html_extra_path = [
     'googlecd24172c95f0d5b3.html',
     'ms72214890.txt'
 ]
+
+html_sidebars = {
+    'feature': [],
+    'service': [],
+}
 
 html_theme_options = {
     "icon_links": [
