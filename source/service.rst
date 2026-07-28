@@ -85,4 +85,4 @@ FlexConfirmMailの製品紹介、デモ、導入に関するご相談、御見�
 
 * 製品資料ダウンロード: https://www.clear-code.com/downloads/flexconfirmmail-introduction.html
 * Webフォーム： https://www.clear-code.com/contact/
-* メール： info@clear-code.com
+
